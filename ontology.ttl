@@ -1,0 +1,2734 @@
+@prefix : <http://www.manunetwork.com/manuservice/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.manunetwork.com/manuservice/v1#> .
+
+<http://www.manunetwork.com/manuservice/v1#> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.manunetwork.com/dc/elements/1.0/contributor
+<http://www.manunetwork.com/dc/elements/1.0/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.manunetwork.com/dc/elements/1.0/creator
+<http://www.manunetwork.com/dc/elements/1.0/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.manunetwork.com/dc/elements/1.0/rights
+<http://www.manunetwork.com/dc/elements/1.0/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.manunetwork.com/dc/terms/license
+<http://www.manunetwork.com/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.manunetwork.com/manuservice/v1#productAppliedIn
+:productAppliedIn rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.manunetwork.com/manuservice/v1#acceptedPaymentMethod
+:acceptedPaymentMethod rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Project ;
+                       rdfs:range :PaymentMethod ;
+                       rdfs:label "accepted payment method"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#appliesToDeliveryMethod
+:appliesToDeliveryMethod rdf:type owl:ObjectProperty ;
+                         rdfs:domain :DeliveryChargeSpecification ;
+                         rdfs:range :DeliveryMethod ;
+                         rdfs:label "applies to delivery method" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#appliesToFeature
+:appliesToFeature rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Workingstep ,
+                              :Workplan ;
+                  rdfs:range :MachiningFeature ;
+                  rdfs:label "applies to feature"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#appliesToPaymentMethod
+:appliesToPaymentMethod rdf:type owl:ObjectProperty ;
+                        rdfs:domain :PaymentChargeSpecification ;
+                        rdfs:range :PaymentMethod ;
+                        rdfs:label "applies to payment method"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#appliesWorkplan
+:appliesWorkplan rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Workpiece ;
+                 rdfs:range :Workplan ;
+                 rdfs:label "applies workplan"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#expectedDeliveryMethod
+:expectedDeliveryMethod rdf:type owl:ObjectProperty ;
+                        rdfs:domain :Project ;
+                        rdfs:range :DeliveryMethod ;
+                        rdfs:label "expected delivery method"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#fromMaterial
+:fromMaterial rdf:type owl:ObjectProperty ;
+              rdfs:domain :Workpiece ;
+              rdfs:range :Material ;
+              rdfs:label "from material"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#fromStandardPart
+:fromStandardPart rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Workpiece ;
+                  rdfs:range :StandardPart ;
+                  rdfs:label "from standard part" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasAccessTo
+:hasAccessTo rdf:type owl:ObjectProperty ;
+             rdfs:label "has access to" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasAddress
+:hasAddress rdf:type owl:ObjectProperty ;
+            rdfs:domain :BusinessEntity ;
+            rdfs:range :Address ;
+            rdfs:label "has address"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasBillingAddress
+:hasBillingAddress rdf:type owl:ObjectProperty ;
+                   rdfs:domain :BusinessEntity ;
+                   rdfs:range :Address ;
+                   rdfs:label "has billing address"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasBottomStyle
+:hasBottomStyle rdf:type owl:ObjectProperty ;
+                rdfs:domain :CounterboreBlindHole ,
+                            :CountersunkBlindHole ,
+                            :SimpleBlindHole ,
+                            :ThreadedBlindHole ;
+                rdfs:range :HoleBottomStyle ;
+                rdfs:label "has bottom style"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasCornerStyle
+:hasCornerStyle rdf:type owl:ObjectProperty ;
+                rdfs:domain :ContouredShoulder ,
+                            :CurveSlot ,
+                            :CylindricalPocket ,
+                            :GeneralClosedPocket ,
+                            :GeneralOpenPocket ,
+                            :StraightShoulder ,
+                            :StraightSlot ;
+                rdfs:range :CornerStyle ;
+                rdfs:label "has corner style"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasCost
+:hasCost rdf:type owl:ObjectProperty ;
+         rdfs:domain :Project ;
+         rdfs:range :CostSpecification ;
+         rdfs:label "has cost"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasCostExpectation
+:hasCostExpectation rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Project ;
+                    rdfs:range :CostSpecification ;
+                    rdfs:label "has cost expectation"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasDrawing
+:hasDrawing rdf:type owl:ObjectProperty ;
+            rdfs:domain :Product ,
+                        :Workpiece ;
+            rdfs:range :Drawing ;
+            rdfs:label "has drawing"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasFunction
+:hasFunction rdf:type owl:ObjectProperty ;
+             rdfs:label "has function"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasGeoLocation
+:hasGeoLocation rdf:type owl:ObjectProperty ;
+                rdfs:domain :Address ;
+                rdfs:range :GeoCoordinates ;
+                rdfs:label "has geo location"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasOwner
+:hasOwner rdf:type owl:ObjectProperty ;
+          rdfs:domain :MazakQTN100IIMS ,
+                      :Project ;
+          rdfs:range :BusinessEntity ;
+          rdfs:label "has owner"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasPosition
+:hasPosition rdf:type owl:ObjectProperty ;
+             rdfs:label "has position"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasPostalAddress
+:hasPostalAddress rdf:type owl:ObjectProperty ;
+                  rdfs:domain :BusinessEntity ;
+                  rdfs:range :Address ;
+                  rdfs:label "has postal address"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasProduct
+:hasProduct rdf:type owl:ObjectProperty ;
+            rdfs:domain :BusinessEntity ,
+                        :Project ;
+            rdfs:range :Product ;
+            rdfs:label "has product"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasProductionModel
+:hasProductionModel rdf:type owl:ObjectProperty ;
+                    rdfs:domain :BusinessEntity ;
+                    rdfs:range :ProductionModel ;
+                    rdfs:label "has production model"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasServiceLog
+:hasServiceLog rdf:type owl:ObjectProperty ;
+               rdfs:domain :Project ,
+                           :Workpiece ;
+               rdfs:range :ServiceLog ;
+               rdfs:label "has service log"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasServiceProvider
+:hasServiceProvider rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Workingstep ;
+                    rdfs:range :BusinessEntity ;
+                    rdfs:label "has service provider"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasSpindle
+:hasSpindle rdf:type owl:ObjectProperty ;
+            rdfs:domain :MazakQTN100IIMS ;
+            rdfs:range :Spindle ;
+            rdfs:label "has spindle"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasSubWorkpiece
+:hasSubWorkpiece rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Workpiece ;
+                 rdfs:range :Workpiece ;
+                 rdfs:label "has sub workpiece"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasSupplier
+:hasSupplier rdf:type owl:ObjectProperty ;
+             rdfs:domain :StandardPart ;
+             rdfs:range :BusinessEntity ;
+             rdfs:label "has supplier" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasTurret
+:hasTurret rdf:type owl:ObjectProperty ;
+           rdfs:domain :MazakQTN100IIMS ;
+           rdfs:range :Spindle ;
+           rdfs:label "has turret"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasWorkpiece
+:hasWorkpiece rdf:type owl:ObjectProperty ;
+              rdfs:domain :Product ;
+              rdfs:range :Workpiece ;
+              rdfs:label "has workpiece"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#includesFeature
+:includesFeature rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Workpiece ;
+                 rdfs:range :MachiningFeature ;
+                 rdfs:label "includes feature"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#includesWorkingstep
+:includesWorkingstep rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Workplan ;
+                     rdfs:range :Workingstep ;
+                     rdfs:label "includes workingstep"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#selectedDeliveryMethod
+:selectedDeliveryMethod rdf:type owl:ObjectProperty ;
+                        rdfs:domain :Project ;
+                        rdfs:range :DeliveryMethod ;
+                        rdfs:label "selected delivery method"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.manunetwork.com/manuservice/v1#addressCountry
+:addressCountry rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Address ;
+                rdfs:range rdfs:Literal ;
+                rdfs:label "address country"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#addressLocality
+:addressLocality rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Address ;
+                 rdfs:range rdfs:Literal ;
+                 rdfs:label "address locality"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#addressRegion
+:addressRegion rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Address ;
+               rdfs:range rdfs:Literal ;
+               rdfs:label "address region"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#angleOfChamfer
+:angleOfChamfer rdf:type owl:DatatypeProperty ;
+                rdfs:domain :PlanarContourChamfer ,
+                            :StraightChamfer ;
+                rdfs:range rdfs:Literal ;
+                rdfs:label "angle of chamfer"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#angleOfCountersunkFace
+:angleOfCountersunkFace rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :CountersunkBlindHole ,
+                                    :CountersunkThroughHole ;
+                        rdfs:range rdfs:Literal ;
+                        rdfs:label "angle of countersunk face"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#angleOfFallingFlank
+:angleOfFallingFlank rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :ODGeneralProfile ;
+                     rdfs:range rdfs:Literal ;
+                     rdfs:label "angle of falling flank"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#angleOfRisingFlank
+:angleOfRisingFlank rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :IDTaperProfile ,
+                                :ODCylindricalSurfaceWithShoulder ,
+                                :ODGeneralProfile ,
+                                :ODIncreasingProfile ,
+                                :ODSimpleCylinder ;
+                    rdfs:range rdfs:Literal ;
+                    rdfs:label "angle of rising flank"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#angleOfSymetricVGroove
+:angleOfSymetricVGroove rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :ODGroove ;
+                        rdfs:range rdfs:Literal ;
+                        rdfs:label "angle of symetric V groove" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#angleOfTip
+:angleOfTip rdf:type owl:DatatypeProperty ;
+            rdfs:domain :ConicalBottom ,
+                        :IDSimpleBlindHole ;
+            rdfs:range rdfs:Literal ;
+            rdfs:label "angle of tip"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#angleOfWallValue
+:angleOfWallValue rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :ContouredShoulder ,
+                              :CurveSlot ,
+                              :CylindricalPocket ,
+                              :GeneralClosedPocket ,
+                              :GeneralOpenPocket ,
+                              :StraightShoulder ,
+                              :StraightSlot ;
+                  rdfs:range rdfs:Literal ;
+                  rdfs:label "angle of wall value"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#bottomRadius
+:bottomRadius rdf:type owl:DatatypeProperty ;
+              rdfs:domain :IDBlindHoleWithFlatBottom ,
+                          :IDBlindHoleWithFlatBottomFromPredrilledHole ;
+              rdfs:range rdfs:Literal ;
+              rdfs:label "bottom radius"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#category
+:category rdf:type owl:DatatypeProperty ;
+          rdfs:domain :BusinessEntity ;
+          rdfs:range rdfs:Literal ;
+          rdfs:label "category"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#chunkSize
+:chunkSize rdf:type owl:DatatypeProperty ;
+           rdfs:range xsd:decimal ;
+           rdfs:label "chunk size"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#cornerBreak
+:cornerBreak rdf:type owl:DatatypeProperty ;
+             rdfs:domain :CornerBreak ;
+             rdfs:range rdfs:Literal ;
+             rdfs:label "corner break"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#creditGrade
+:creditGrade rdf:type owl:DatatypeProperty ;
+             rdfs:range xsd:double ;
+             rdfs:label "credit grade"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#dateLastModified
+:dateLastModified rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Project ;
+                  rdfs:range xsd:dateTime ;
+                  rdfs:label "date last modified"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#dateOriginated
+:dateOriginated rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Project ;
+                rdfs:range xsd:dateTime ;
+                rdfs:comment """This property specifies the end of the availability of the gr:ProductOrService included in the gr:Offering.
+The difference to the properties gr:validFrom and gr:validThrough is that those specify the period of time during which the offer is valid and can be accepted.
+Example: I offer to lease my boat for the period of August 1 - August 31, 2010, but you must accept by offer no later than July 15.
+A time-zone should be specified. For a time in GMT/UTC, simply add a \"Z\" following the time:
+2008-05-30T09:30:10Z.
+Alternatively, you can specify an offset from the UTC time by adding a positive or negative time following the time:
+2008-05-30T09:30:10-09:00
+or
+2008-05-30T09:30:10+09:00.
+Note: There is another property gr:availableAtOrFrom, which is used to indicate the gr:Location (e.g. store or shop) from which the goods would be available."""@en ;
+                rdfs:label "date originated"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#depthOfFace
+:depthOfFace rdf:type owl:DatatypeProperty ;
+             rdfs:domain :ConvexContourSurface ,
+                         :GeneralContourSurface ;
+             rdfs:range rdfs:Literal ;
+             rdfs:label "depth of face"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#depthOfGroove
+:depthOfGroove rdf:type owl:DatatypeProperty ;
+               rdfs:domain :ODFaceGroove ,
+                           :ODGroove ;
+               rdfs:range rdfs:Literal ;
+               rdfs:label "depth of groove" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#depthOfPocket
+:depthOfPocket rdf:type owl:DatatypeProperty ;
+               rdfs:domain :CylindricalPocket ,
+                           :GeneralClosedPocket ,
+                           :GeneralOpenPocket ;
+               rdfs:range rdfs:Literal ;
+               rdfs:label "depth of pocket"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#depthOfShoulder
+:depthOfShoulder rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :ContouredShoulder ,
+                             :StraightShoulder ;
+                 rdfs:range rdfs:Literal ;
+                 rdfs:label "depth of shoulder"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#depthOfSlot
+:depthOfSlot rdf:type owl:DatatypeProperty ;
+             rdfs:domain :CurveSlot ,
+                         :SlotWithConcaveRunOn ,
+                         :StraightSlot ,
+                         :TSlot ;
+             rdfs:range rdfs:Literal ;
+             rdfs:label "depth of slot"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#description
+:description rdf:type owl:DatatypeProperty ;
+             rdfs:domain :BusinessEntity ,
+                         :Product ,
+                         :Project ,
+                         :Workingstep ,
+                         :Workpiece ;
+             rdfs:range rdfs:Literal ;
+             rdfs:label "description"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#diameterOfCountersunkHole
+:diameterOfCountersunkHole rdf:type owl:DatatypeProperty ;
+                           rdfs:domain :CountersunkBlindHole ,
+                                       :CountersunkThroughHole ;
+                           rdfs:range rdfs:Literal ;
+                           rdfs:label "diameter of countersunk hole"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#diameterOfCylinder
+:diameterOfCylinder rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :ODCylindricalSurfaceWithShoulder ,
+                                :ODSimpleCylinder ,
+                                :ODSimpleCylindricalSurface ;
+                    rdfs:range rdfs:Literal ;
+                    rdfs:label "diameter of cylinder"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#diameterOfFlatbottomedHole
+:diameterOfFlatbottomedHole rdf:type owl:DatatypeProperty ;
+                            rdfs:domain :CounterboreBlindHole ,
+                                        :CounterboreThroughHole ;
+                            rdfs:range rdfs:Literal ;
+                            rdfs:label "diameter of flatbottomed hole"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#diameterOfGrooveFloorCylinder
+:diameterOfGrooveFloorCylinder rdf:type owl:DatatypeProperty ;
+                               rdfs:label "diameter of groove floor cylinder" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#diameterOfHole
+:diameterOfHole rdf:type owl:DatatypeProperty ;
+                rdfs:domain :CounterboreBlindHole ,
+                            :CounterboreThroughHole ,
+                            :CountersunkBlindHole ,
+                            :CountersunkThroughHole ,
+                            :IDBlindHoleWithFlatBottom ,
+                            :IDBlindHoleWithFlatBottomFromPredrilledHole ,
+                            :IDBlindHoleWithUndefinedShape ,
+                            :IDSimpleBlindHole ,
+                            :IDSimpleThroughHole ,
+                            :SimpleBlindHole ,
+                            :SimpleThroughHole ;
+                rdfs:range rdfs:Literal ;
+                rdfs:label "diameter of hole"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#diameterOfInnerCylinder
+:diameterOfInnerCylinder rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :ODPlanarSurfaceFromTube ;
+                         rdfs:range rdfs:Literal ;
+                         rdfs:label "diameter of inner cylinder"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#diameterOfInnerHole
+:diameterOfInnerHole rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :ODCutOffTube ;
+                     rdfs:range rdfs:Literal ;
+                     rdfs:label "diameter of inner hole"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#diameterOfPlanarFace
+:diameterOfPlanarFace rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :ODPlanarSurfaceFromSolid ,
+                                  :ODPlanarSurfaceFromTube ;
+                      rdfs:range rdfs:Literal ;
+                      rdfs:label "diameter of planar face"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#diameterOfPlanarSplitFace
+:diameterOfPlanarSplitFace rdf:type owl:DatatypeProperty ;
+                           rdfs:domain :ODCutOffSolid ,
+                                       :ODCutOffTube ;
+                           rdfs:range rdfs:Literal ;
+                           rdfs:label "diameter of planar split face"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#diameterOfPredrilledHole
+:diameterOfPredrilledHole rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :CylindricalPocket ,
+                                      :GeneralClosedPocket ,
+                                      :IDBlindHoleWithFlatBottomFromPredrilledHole ,
+                                      :IDSimpleBlindHole ,
+                                      :IDSimpleThroughHole ;
+                          rdfs:range rdfs:Literal ;
+                          rdfs:label "diameter of predrilled hole"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#distanceBetweenGrooveAndFrontFaceOfWorkpiece
+:distanceBetweenGrooveAndFrontFaceOfWorkpiece rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain :ODGeneralProfile ,
+                                                          :ODGroove ;
+                                              rdfs:range rdfs:Literal ;
+                                              rdfs:label "distance between groove and front face of workpiece"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#drawingNumber
+:drawingNumber rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Product ,
+                           :Workpiece ;
+               rdfs:range xsd:string ;
+               rdfs:label "drawing number" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#elevation
+:elevation rdf:type owl:DatatypeProperty ;
+           rdfs:domain :GeoCoordinates ;
+           rdfs:range rdfs:Literal .
+
+
+###  http://www.manunetwork.com/manuservice/v1#eligibleRegions
+:eligibleRegions rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :DeliveryChargeSpecification ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "eligible regions"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#entityType
+:entityType rdf:type owl:DatatypeProperty ;
+            rdfs:range xsd:string ;
+            rdfs:label "entity type"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#eventDate
+:eventDate rdf:type owl:DatatypeProperty ;
+           rdfs:domain :ServiceLog ;
+           rdfs:range xsd:dateTime ;
+           rdfs:label "event date" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#eventDescription
+:eventDescription rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :ServiceLog ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "event description" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#eventType
+:eventType rdf:type owl:DatatypeProperty ;
+           rdfs:domain :ServiceLog ;
+           rdfs:range xsd:string ;
+           rdfs:label "event type" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#faxNumber
+:faxNumber rdf:type owl:DatatypeProperty ;
+           rdfs:domain :BusinessEntity ;
+           rdfs:range xsd:string ;
+           rdfs:label "fax number"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#fileFormat
+:fileFormat rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Drawing ;
+            rdfs:range xsd:string ;
+            rdfs:label "file format"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#fileSize
+:fileSize rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Drawing ;
+          rdfs:range rdfs:Literal ;
+          rdfs:label "file size"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#floorRadiusValue
+:floorRadiusValue rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :CornerRadius ,
+                              :SlotWithConcaveRunOn ,
+                              :TSlot ;
+                  rdfs:range rdfs:Literal ;
+                  rdfs:label "floor radius value"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#grooveWidth
+:grooveWidth rdf:type owl:DatatypeProperty ;
+             rdfs:label "groove width" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasCurrency
+:hasCurrency rdf:type owl:DatatypeProperty ;
+             rdfs:domain :CostSpecification ;
+             rdfs:range xsd:string ;
+             rdfs:label "has currency"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasCurrencyValue
+:hasCurrencyValue rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :CostSpecification ;
+                  rdfs:range xsd:float ;
+                  rdfs:label "has currency value"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasDUNS
+:hasDUNS rdf:type owl:DatatypeProperty ;
+         rdfs:domain :BusinessEntity ;
+         rdfs:range xsd:string ;
+         rdfs:label "has DUNS"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasGlobalLocationNumber
+:hasGlobalLocationNumber rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :BusinessEntity ;
+                         rdfs:range xsd:string ;
+                         rdfs:label "has Global Location Number"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasHardnessHB
+:hasHardnessHB rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Material ;
+               rdfs:range xsd:float ;
+               rdfs:label "has hardness HB"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasHardnessHRC
+:hasHardnessHRC rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Material ;
+                rdfs:range xsd:float ;
+                rdfs:label "has hardness HRC"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasISICv4
+:hasISICv4 rdf:type owl:DatatypeProperty ;
+           rdfs:domain :BusinessEntity ;
+           rdfs:range xsd:int ;
+           rdfs:label "has ISIC v4"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasMaXCurrencyValue
+:hasMaXCurrencyValue rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :CostSpecification ;
+                     rdfs:range xsd:float ;
+                     rdfs:label "has max currency value"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasMaxHardnessHB
+:hasMaxHardnessHB rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Material ;
+                  rdfs:range xsd:float ;
+                  rdfs:label "has max hardness HB"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasMaxHardnessHRC
+:hasMaxHardnessHRC rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Material ;
+                   rdfs:range xsd:float ;
+                   rdfs:label "has max hardness HRC"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasMaxValue
+:hasMaxValue rdf:type owl:DatatypeProperty ;
+             rdfs:range rdfs:Literal ;
+             rdfs:label "has max value"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasMinCurrencyValue
+:hasMinCurrencyValue rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :CostSpecification ;
+                     rdfs:range xsd:float ;
+                     rdfs:label "has min currency value"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasMinHardnessHB
+:hasMinHardnessHB rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Material ;
+                  rdfs:range xsd:float ;
+                  rdfs:label "has min hardness HB"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasMinHardnessHRC
+:hasMinHardnessHRC rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Material ;
+                   rdfs:range xsd:float ;
+                   rdfs:label "has min hardness HRC"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasMinValue
+:hasMinValue rdf:type owl:DatatypeProperty ;
+             rdfs:range rdfs:Literal ;
+             rdfs:label "has min value"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasNAICS
+:hasNAICS rdf:type owl:DatatypeProperty ;
+          rdfs:domain :BusinessEntity ;
+          rdfs:range xsd:int ;
+          rdfs:label "has NAICS"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#hasUnitOfMeasurement
+:hasUnitOfMeasurement rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Product ;
+                      rdfs:range xsd:string ;
+                      rdfs:label "has unit of measurement"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#id
+:id rdf:type owl:DatatypeProperty ;
+    rdfs:domain :BusinessEntity ,
+                :Resource ;
+    rdfs:range xsd:string ;
+    rdfs:label "id" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#innerDiameterOfCylinder
+:innerDiameterOfCylinder rdf:type owl:DatatypeProperty ;
+                         rdfs:label "inner diameter of cylinder" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#innerDiameterOfProfile
+:innerDiameterOfProfile rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :IDTaperProfile ;
+                        rdfs:range rdfs:Literal ;
+                        rdfs:label "inner diameter of profile"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#jobNumber
+:jobNumber rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Project ;
+           rdfs:range xsd:string ;
+           rdfs:label "job number" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#latitude
+:latitude rdf:type owl:DatatypeProperty ;
+          rdfs:domain :GeoCoordinates ;
+          rdfs:range xsd:double .
+
+
+###  http://www.manunetwork.com/manuservice/v1#legalName
+:legalName rdf:type owl:DatatypeProperty ;
+           rdfs:domain :BusinessEntity ;
+           rdfs:range rdfs:Literal ;
+           rdfs:label "legal name"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#lengthOfChamfer
+:lengthOfChamfer rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :PlanarContourChamfer ,
+                             :StraightChamfer ;
+                 rdfs:range rdfs:Literal ;
+                 rdfs:label "length of chamfer"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#lengthOfContouredSurface
+:lengthOfContouredSurface rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :ConvexContourSurface ,
+                                      :GeneralContourSurface ;
+                          rdfs:range rdfs:Literal ;
+                          rdfs:label "length of contoured surface"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#lengthOfCylinder
+:lengthOfCylinder rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :ODCylindricalSurfaceWithShoulder ,
+                              :ODSimpleCylinder ,
+                              :ODSimpleCylindricalSurface ;
+                  rdfs:range rdfs:Literal ;
+                  rdfs:label "length of cylinder"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#lengthOfCylindricalPartOfGroove
+:lengthOfCylindricalPartOfGroove rdf:type owl:DatatypeProperty ;
+                                 rdfs:label "length of cylindrical part of groove" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#lengthOfFlatbottomedHole
+:lengthOfFlatbottomedHole rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :CounterboreBlindHole ,
+                                      :CounterboreThroughHole ;
+                          rdfs:range rdfs:Literal ;
+                          rdfs:label "length of flatbottomed hole"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#lengthOfHole
+:lengthOfHole rdf:type owl:DatatypeProperty ;
+              rdfs:domain :CounterboreBlindHole ,
+                          :CounterboreThroughHole ,
+                          :CountersunkBlindHole ,
+                          :CountersunkThroughHole ,
+                          :IDBlindHoleWithFlatBottom ,
+                          :IDBlindHoleWithFlatBottomFromPredrilledHole ,
+                          :IDBlindHoleWithUndefinedShape ,
+                          :IDSimpleBlindHole ,
+                          :IDSimpleThroughHole ,
+                          :SimpleBlindHole ;
+              rdfs:range rdfs:Literal ;
+              rdfs:label "length of hole"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#lengthOfPlanarSurface
+:lengthOfPlanarSurface rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :PlanarSurface ;
+                       rdfs:range rdfs:Literal ;
+                       rdfs:label "length of planar surface"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#lengthOfProfile
+:lengthOfProfile rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :IDTaperProfile ,
+                             :ODIncreasingProfile ;
+                 rdfs:range rdfs:Literal ;
+                 rdfs:label "length of profile"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#lengthOfShoulder
+:lengthOfShoulder rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :ContouredShoulder ,
+                              :StraightShoulder ;
+                  rdfs:range rdfs:Literal ;
+                  rdfs:label "length of shoulder"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#longitude
+:longitude rdf:type owl:DatatypeProperty ;
+           rdfs:domain :GeoCoordinates ;
+           rdfs:range xsd:double .
+
+
+###  http://www.manunetwork.com/manuservice/v1#materialGroup
+:materialGroup rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Material ;
+               rdfs:range xsd:string ;
+               rdfs:label "material group"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#materialSubGroup
+:materialSubGroup rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Material ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "material sub group"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#maxAllowedLengthOfHole
+:maxAllowedLengthOfHole rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :IDBlindHoleWithUndefinedShape ;
+                        rdfs:range rdfs:Literal ;
+                        rdfs:label "max allowed length of hole"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#maxAngleOfChamfer
+:maxAngleOfChamfer rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :PlanarContourChamfer ,
+                               :StraightChamfer ;
+                   rdfs:range rdfs:Literal ;
+                   rdfs:label "max angle of chamfer"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#maxAngleOfCountersunkFace
+:maxAngleOfCountersunkFace rdf:type owl:DatatypeProperty ;
+                           rdfs:domain :CountersunkBlindHole ,
+                                       :CountersunkThroughHole ;
+                           rdfs:range rdfs:Literal ;
+                           rdfs:label "max angle of countersunk face"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#maxAngleOfEntryAtHoleStart
+:maxAngleOfEntryAtHoleStart rdf:type owl:DatatypeProperty ;
+                            rdfs:domain :CounterboreThroughHole ,
+                                        :CountersunkThroughHole ,
+                                        :SimpleBlindHole ,
+                                        :SimpleThroughHole ,
+                                        :ThreadedBlindHole ,
+                                        :ThreadedThroughHole ;
+                            rdfs:range rdfs:Literal ;
+                            rdfs:label "max angle of entry at hole start"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#maxAngleOfExitAtHoleEnd
+:maxAngleOfExitAtHoleEnd rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :CounterboreThroughHole ,
+                                     :CountersunkThroughHole ,
+                                     :SimpleThroughHole ;
+                         rdfs:range rdfs:Literal ;
+                         rdfs:label "max angle of exit at hole end"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#maxAngleOfTip
+:maxAngleOfTip rdf:type owl:DatatypeProperty ;
+               rdfs:domain :ConicalBottom ,
+                           :IDSimpleBlindHole ;
+               rdfs:range rdfs:Literal ;
+               rdfs:label "max angle of tip"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#maxAngleOfWallValue
+:maxAngleOfWallValue rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :ContouredShoulder ,
+                                 :CurveSlot ,
+                                 :CylindricalPocket ,
+                                 :GeneralClosedPocket ,
+                                 :GeneralOpenPocket ,
+                                 :StraightShoulder ,
+                                 :StraightSlot ;
+                     rdfs:range rdfs:Literal ;
+                     rdfs:label "max angle of wall value"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#maxBarWorkCapacity
+:maxBarWorkCapacity rdf:type owl:DatatypeProperty ;
+                    rdfs:label "max bar work capacity"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#maxDepth
+:maxDepth rdf:type owl:DatatypeProperty ;
+          rdfs:domain :ODGeneralProfile ;
+          rdfs:range rdfs:Literal ;
+          rdfs:label "max depth"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#maxDepthOfCut
+:maxDepthOfCut rdf:type owl:DatatypeProperty ;
+               rdfs:domain :IDBlindHoleWithFlatBottom ,
+                           :IDBlindHoleWithFlatBottomFromPredrilledHole ,
+                           :IDBlindHoleWithUndefinedShape ,
+                           :IDSimpleBlindHole ,
+                           :IDSimpleThroughHole ,
+                           :IDTaperProfile ,
+                           :ODCylindricalSurfaceWithShoulder ,
+                           :ODGeneralProfile ,
+                           :ODIncreasingProfile ,
+                           :ODPlanarSurfaceFromSolid ,
+                           :ODPlanarSurfaceFromTube ,
+                           :ODSimpleCylinder ,
+                           :ODSimpleCylindricalSurface ;
+               rdfs:range rdfs:Literal ;
+               rdfs:label "max depth of cut"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#maxDepthOfSlot
+:maxDepthOfSlot rdf:type owl:DatatypeProperty ;
+                rdfs:domain :TSlot ;
+                rdfs:range rdfs:Literal ;
+                rdfs:label "max depth of slot"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#maxDiameterOfAxialGroove
+:maxDiameterOfAxialGroove rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :ODFaceGroove ,
+                                      :ODGroove ;
+                          rdfs:range rdfs:Literal ;
+                          rdfs:label "max diameter of axial groove" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#maxDiameterOfCountersunkHole
+:maxDiameterOfCountersunkHole rdf:type owl:DatatypeProperty ;
+                              rdfs:domain :CountersunkBlindHole ,
+                                          :CountersunkThroughHole ;
+                              rdfs:range rdfs:Literal ;
+                              rdfs:label "max diameter of countersunk hole"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#maxDiameterOfFlatbottomedHole
+:maxDiameterOfFlatbottomedHole rdf:type owl:DatatypeProperty ;
+                               rdfs:domain :CounterboreBlindHole ,
+                                           :CounterboreThroughHole ;
+                               rdfs:range rdfs:Literal ;
+                               rdfs:label "max diameter of flatbottomed hole"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#maxDiameterOfHole
+:maxDiameterOfHole rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :CounterboreBlindHole ,
+                               :CounterboreThroughHole ,
+                               :CountersunkBlindHole ,
+                               :CountersunkThroughHole ,
+                               :IDBlindHoleWithFlatBottom ,
+                               :IDBlindHoleWithFlatBottomFromPredrilledHole ,
+                               :IDBlindHoleWithUndefinedShape ,
+                               :IDSimpleBlindHole ,
+                               :IDSimpleThroughHole ,
+                               :SimpleBlindHole ,
+                               :SimpleThroughHole ;
+                   rdfs:range rdfs:Literal ;
+                   rdfs:label "max diameter of hole"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#maxFloorRadiusValue
+:maxFloorRadiusValue rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :CornerRadius ,
+                                 :SlotWithConcaveRunOn ,
+                                 :TSlot ;
+                     rdfs:range rdfs:Literal ;
+                     rdfs:label "max floor radius value"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#maxGrooveWidth
+:maxGrooveWidth rdf:type owl:DatatypeProperty ;
+                rdfs:label "max groove width" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#maxLengthOfCylindricalPartOfGroove
+:maxLengthOfCylindricalPartOfGroove rdf:type owl:DatatypeProperty ;
+                                    rdfs:label "max length of cylindrical part of groove" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#maxMachiningDiameter
+:maxMachiningDiameter rdf:type owl:DatatypeProperty ;
+                      rdfs:label "max machining diameter"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#maxMachiningLength
+:maxMachiningLength rdf:type owl:DatatypeProperty ;
+                    rdfs:label "max machining length"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#maxRadiusOfConcaveGroundShape
+:maxRadiusOfConcaveGroundShape rdf:type owl:DatatypeProperty ;
+                               rdfs:domain :SlotWithConcaveRunOn ;
+                               rdfs:range rdfs:Literal ;
+                               rdfs:label "max radius of concave ground shape"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#maxSpeed
+:maxSpeed rdf:type owl:DatatypeProperty ;
+          rdfs:label "max speed"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#maxSwing
+:maxSwing rdf:type owl:DatatypeProperty ;
+          rdfs:label "max swing"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#maxWidthOfChamfer
+:maxWidthOfChamfer rdf:type owl:DatatypeProperty ;
+                   rdfs:domain <http://www.manunetwork.com/manuservice/v1#45Chamfer> ;
+                   rdfs:range rdfs:Literal ;
+                   rdfs:label "max width of chamfer"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#maxWidthOfCut
+:maxWidthOfCut rdf:type owl:DatatypeProperty ;
+               rdfs:domain :ODFaceGroove ,
+                           :ODGroove ;
+               rdfs:range rdfs:Literal ;
+               rdfs:label "max width of cut" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#maxWidthOfRemovedMaterialZone
+:maxWidthOfRemovedMaterialZone rdf:type owl:DatatypeProperty ;
+                               rdfs:domain :ODCutOffSolid ,
+                                           :ODCutOffTube ;
+                               rdfs:range rdfs:Literal ;
+                               rdfs:label "max width of removed material zone"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#maxWidthOfShoulder
+:maxWidthOfShoulder rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :ContouredShoulder ,
+                                :StraightShoulder ;
+                    rdfs:range rdfs:Literal ;
+                    rdfs:label "max width of shoulder"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#maxWidthOfSlot
+:maxWidthOfSlot rdf:type owl:DatatypeProperty ;
+                rdfs:domain :CurveSlot ,
+                            :SlotWithConcaveRunOn ,
+                            :StraightSlot ,
+                            :TSlot ;
+                rdfs:range rdfs:Literal ;
+                rdfs:label "max width of slot"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#maxWidthOfTSlot
+:maxWidthOfTSlot rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :TSlot ;
+                 rdfs:range rdfs:Literal ;
+                 rdfs:label "max width of T slot"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#maxWidthOfTSlotNeck
+:maxWidthOfTSlotNeck rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :TSlot ;
+                     rdfs:range rdfs:Literal ;
+                     rdfs:label "max width of T slot neck"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#maxWorkpieceWeight
+:maxWorkpieceWeight rdf:type owl:DatatypeProperty ;
+                    rdfs:label "max workpiece weight"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#minAngleOfChamfer
+:minAngleOfChamfer rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :PlanarContourChamfer ,
+                               :StraightChamfer ;
+                   rdfs:range rdfs:Literal ;
+                   rdfs:label "min angle of chamfer"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#minAngleOfCountersunkFace
+:minAngleOfCountersunkFace rdf:type owl:DatatypeProperty ;
+                           rdfs:domain :CountersunkBlindHole ,
+                                       :CountersunkThroughHole ;
+                           rdfs:range rdfs:Literal ;
+                           rdfs:label "min angle of countersunk face"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#minAngleOfTip
+:minAngleOfTip rdf:type owl:DatatypeProperty ;
+               rdfs:domain :ConicalBottom ,
+                           :IDSimpleBlindHole ;
+               rdfs:range rdfs:Literal ;
+               rdfs:label "min angle of tip"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#minAngleOfWallVaule
+:minAngleOfWallVaule rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :ContouredShoulder ,
+                                 :CurveSlot ,
+                                 :CylindricalPocket ,
+                                 :GeneralClosedPocket ,
+                                 :GeneralOpenPocket ,
+                                 :StraightShoulder ,
+                                 :StraightSlot ;
+                     rdfs:range rdfs:Literal ;
+                     rdfs:label "min angle of wall value"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#minDepthOfSlot
+:minDepthOfSlot rdf:type owl:DatatypeProperty ;
+                rdfs:domain :TSlot ;
+                rdfs:range rdfs:Literal ;
+                rdfs:label "min depth of slot"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#minDiameterOfAxialGroove
+:minDiameterOfAxialGroove rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :ODFaceGroove ,
+                                      :ODGroove ;
+                          rdfs:range rdfs:Literal ;
+                          rdfs:label "min diameter of axial groove" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#minDiameterOfCountersunkHole
+:minDiameterOfCountersunkHole rdf:type owl:DatatypeProperty ;
+                              rdfs:domain :CountersunkBlindHole ,
+                                          :CountersunkThroughHole ;
+                              rdfs:range rdfs:Literal ;
+                              rdfs:label "min diameter of countersunk hole"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#minDiameterOfFlatbottomedHole
+:minDiameterOfFlatbottomedHole rdf:type owl:DatatypeProperty ;
+                               rdfs:domain :CounterboreBlindHole ,
+                                           :CounterboreThroughHole ;
+                               rdfs:range rdfs:Literal ;
+                               rdfs:label "min diameter of flatbottomed hole"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#minDiameterOfHole
+:minDiameterOfHole rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :CounterboreBlindHole ,
+                               :CounterboreThroughHole ,
+                               :CountersunkBlindHole ,
+                               :CountersunkThroughHole ,
+                               :IDBlindHoleWithFlatBottom ,
+                               :IDBlindHoleWithFlatBottomFromPredrilledHole ,
+                               :IDBlindHoleWithUndefinedShape ,
+                               :IDSimpleBlindHole ,
+                               :IDSimpleThroughHole ,
+                               :SimpleBlindHole ,
+                               :SimpleThroughHole ;
+                   rdfs:range rdfs:Literal ;
+                   rdfs:label "min diameter of hole"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#minFloorRadiusOfFaceGroove
+:minFloorRadiusOfFaceGroove rdf:type owl:DatatypeProperty ;
+                            rdfs:domain :ODFaceGroove ,
+                                        :ODGroove ;
+                            rdfs:range rdfs:Literal ;
+                            rdfs:label "min floor radius of face groove" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#minFloorRadiusValue
+:minFloorRadiusValue rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :CornerRadius ,
+                                 :SlotWithConcaveRunOn ,
+                                 :TSlot ;
+                     rdfs:range rdfs:Literal ;
+                     rdfs:label "min floor radius value"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#minGrooveWidth
+:minGrooveWidth rdf:type owl:DatatypeProperty ;
+                rdfs:label "min groove width" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#minLengthOfCylindricalPartOfGroove
+:minLengthOfCylindricalPartOfGroove rdf:type owl:DatatypeProperty ;
+                                    rdfs:label "min length of cylindrical part of groove" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#minLengthOfCylindricalSurface
+:minLengthOfCylindricalSurface rdf:type owl:DatatypeProperty ;
+                               rdfs:domain :ODGeneralProfile ;
+                               rdfs:range rdfs:Literal ;
+                               rdfs:label "min length of cylindrical surface"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#minLengthOfSurfaceQuality
+:minLengthOfSurfaceQuality rdf:type owl:DatatypeProperty ;
+                           rdfs:domain :CounterboreBlindHole ,
+                                       :CounterboreThroughHole ,
+                                       :CountersunkBlindHole ,
+                                       :CountersunkThroughHole ,
+                                       :SimpleBlindHole ,
+                                       :SimpleThroughHole ;
+                           rdfs:range rdfs:Literal ;
+                           rdfs:label "min length of surface quality"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#minRadiusInConcaveCorner
+:minRadiusInConcaveCorner rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :CurveSlot ,
+                                      :CylindricalPocket ,
+                                      :GeneralClosedPocket ,
+                                      :GeneralContourSurface ,
+                                      :GeneralOpenPocket ,
+                                      :PlanarContourChamfer ;
+                          rdfs:range rdfs:Literal ;
+                          rdfs:label "min radius in concave corner"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#minRadiusOfConcaveGroundShape
+:minRadiusOfConcaveGroundShape rdf:type owl:DatatypeProperty ;
+                               rdfs:domain :SlotWithConcaveRunOn ;
+                               rdfs:range rdfs:Literal ;
+                               rdfs:label "min radius of concave ground shape"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#minWidthOfChamfer
+:minWidthOfChamfer rdf:type owl:DatatypeProperty ;
+                   rdfs:domain <http://www.manunetwork.com/manuservice/v1#45Chamfer> ;
+                   rdfs:range rdfs:Literal ;
+                   rdfs:label "min width of chamfer"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#minWidthOfSlot
+:minWidthOfSlot rdf:type owl:DatatypeProperty ;
+                rdfs:domain :CurveSlot ,
+                            :SlotWithConcaveRunOn ,
+                            :StraightSlot ,
+                            :TSlot ;
+                rdfs:range rdfs:Literal ;
+                rdfs:label "min width of slot"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#minWidthOfTSlot
+:minWidthOfTSlot rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :TSlot ;
+                 rdfs:range rdfs:Literal ;
+                 rdfs:label "min width of T slot"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#minWidthOfTSlotNeck
+:minWidthOfTSlotNeck rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :TSlot ;
+                     rdfs:range rdfs:Literal ;
+                     rdfs:label "min width of T slot neck"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#motorOutput
+:motorOutput rdf:type owl:DatatypeProperty ;
+             rdfs:range xsd:decimal ;
+             rdfs:label "motor output"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:domain :BusinessEntity ,
+                  :ContouredShoulder ,
+                  :ConvexContourSurface ,
+                  :CounterboreBlindHole ,
+                  :CounterboreThroughHole ,
+                  :CountersunkBlindHole ,
+                  :CountersunkThroughHole ,
+                  :CurveSlot ,
+                  :CylindricalPocket ,
+                  :GeneralClosedPocket ,
+                  :GeneralContourSurface ,
+                  :GeneralOpenPocket ,
+                  :IDBlindHoleWithFlatBottom ,
+                  :IDBlindHoleWithFlatBottomFromPredrilledHole ,
+                  :IDBlindHoleWithUndefinedShape ,
+                  :IDSimpleBlindHole ,
+                  :IDSimpleThroughHole ,
+                  :IDTaperProfile ,
+                  :MachiningFeature ,
+                  :Material ,
+                  :ODCutOffSolid ,
+                  :ODCutOffTube ,
+                  :ODCylindricalSurfaceWithShoulder ,
+                  :ODFaceGroove ,
+                  :ODGeneralProfile ,
+                  :ODGroove ,
+                  :ODIncreasingProfile ,
+                  :ODPlanarSurfaceFromSolid ,
+                  :ODPlanarSurfaceFromTube ,
+                  :ODSimpleCylinder ,
+                  :ODSimpleCylindricalSurface ,
+                  :PlanarContourChamfer ,
+                  :PlanarSurface ,
+                  :Product ,
+                  :Project ,
+                  :SimpleBlindHole ,
+                  :SimpleThroughHole ,
+                  :SlotWithConcaveRunOn ,
+                  :StraightChamfer ,
+                  :StraightShoulder ,
+                  :StraightSlot ,
+                  :TSlot ,
+                  :ThreadedBlindHole ,
+                  :ThreadedThroughHole ,
+                  :Workingstep ,
+                  :Workpiece ,
+                  :Workplan ;
+      rdfs:range xsd:string ;
+      rdfs:label "name"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#nominalDiameter
+:nominalDiameter rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :ThreadedBlindHole ,
+                             :ThreadedThroughHole ;
+                 rdfs:range rdfs:Literal ;
+                 rdfs:label "nominal diameter"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#numOfTools
+:numOfTools rdf:type owl:DatatypeProperty ;
+            rdfs:range xsd:int ;
+            rdfs:label "num of tools"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#overallLengthOfHole
+:overallLengthOfHole rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :SimpleThroughHole ,
+                                 :ThreadedBlindHole ,
+                                 :ThreadedThroughHole ;
+                     rdfs:range rdfs:Literal ;
+                     rdfs:label "overall length of hole"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#partCode
+:partCode rdf:type owl:DatatypeProperty ;
+          rdfs:domain :StandardPart ;
+          rdfs:range xsd:string ;
+          rdfs:label "part code"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#partNumber
+:partNumber rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Product ,
+                        :Workpiece ;
+            rdfs:range xsd:string ;
+            rdfs:label "part number" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#pitch
+:pitch rdf:type owl:DatatypeProperty ;
+       rdfs:domain :ThreadedBlindHole ,
+                   :ThreadedThroughHole ;
+       rdfs:range rdfs:Literal ;
+       rdfs:label "pitch"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#postalCode
+:postalCode rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Address ;
+            rdfs:range rdfs:Literal ;
+            rdfs:label "postal code"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#postalOfficeBoxNumber
+:postalOfficeBoxNumber rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Address ;
+                       rdfs:range rdfs:Literal ;
+                       rdfs:label "postal office box number"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#qualityOfFace
+:qualityOfFace rdf:type owl:DatatypeProperty ;
+               rdfs:domain :CounterboreBlindHole ,
+                           :CounterboreThroughHole ,
+                           :CountersunkBlindHole ,
+                           :CountersunkThroughHole ,
+                           :IDBlindHoleWithFlatBottom ,
+                           :IDBlindHoleWithFlatBottomFromPredrilledHole ,
+                           :IDBlindHoleWithUndefinedShape ,
+                           :IDSimpleBlindHole ,
+                           :IDSimpleThroughHole ,
+                           :IDTaperProfile ,
+                           :ODCylindricalSurfaceWithShoulder ,
+                           :ODGeneralProfile ,
+                           :ODIncreasingProfile ,
+                           :ODPlanarSurfaceFromSolid ,
+                           :ODPlanarSurfaceFromTube ,
+                           :ODSimpleCylinder ,
+                           :ODSimpleCylindricalSurface ,
+                           :SimpleBlindHole ,
+                           :SimpleThroughHole ;
+               rdfs:range rdfs:Literal ;
+               rdfs:label "quality of face"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#qualityOfWallSurface
+:qualityOfWallSurface rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :ContouredShoulder ,
+                                  :ConvexContourSurface ,
+                                  :CurveSlot ,
+                                  :CylindricalPocket ,
+                                  :GeneralClosedPocket ,
+                                  :GeneralContourSurface ,
+                                  :GeneralOpenPocket ,
+                                  :PlanarSurface ,
+                                  :SlotWithConcaveRunOn ,
+                                  :StraightShoulder ,
+                                  :StraightSlot ,
+                                  :TSlot ;
+                      rdfs:range rdfs:Literal ;
+                      rdfs:label "quality of wall surface"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#quantity
+:quantity rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Product ,
+                      :Workpiece ;
+          rdfs:range xsd:int .
+
+
+###  http://www.manunetwork.com/manuservice/v1#radiusOfConcaveGroundShape
+:radiusOfConcaveGroundShape rdf:type owl:DatatypeProperty ;
+                            rdfs:domain :SlotWithConcaveRunOn ;
+                            rdfs:range rdfs:Literal ;
+                            rdfs:label "radius of concave ground shape"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#radiusOfCorner
+:radiusOfCorner rdf:type owl:DatatypeProperty ;
+                rdfs:domain :ODCylindricalSurfaceWithShoulder ,
+                            :ODSimpleCylinder ;
+                rdfs:range rdfs:Literal ;
+                rdfs:label "radius of corner"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#radiusOfSmallestConcaveBlend
+:radiusOfSmallestConcaveBlend rdf:type owl:DatatypeProperty ;
+                              rdfs:label "raidus of smallest concave blend" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#radiusOfSmallestConcaveProfileBlend
+:radiusOfSmallestConcaveProfileBlend rdf:type owl:DatatypeProperty ;
+                                     rdfs:domain :IDTaperProfile ,
+                                                 :ODGeneralProfile ,
+                                                 :ODIncreasingProfile ;
+                                     rdfs:range rdfs:Literal ;
+                                     rdfs:label "raidus of smallest concave profile blend"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#smallestWidthOfGap
+:smallestWidthOfGap rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :GeneralClosedPocket ,
+                                :GeneralOpenPocket ;
+                    rdfs:range rdfs:Literal ;
+                    rdfs:label "smallest width of gap"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#standardName
+:standardName rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Material ,
+                          :StandardPart ;
+              rdfs:range xsd:string ;
+              rdfs:label "standard name"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#status
+:status rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Project ,
+                    :Workingstep ;
+        rdfs:range xsd:string .
+
+
+###  http://www.manunetwork.com/manuservice/v1#stockInAxialDirection
+:stockInAxialDirection rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :ODPlanarSurfaceFromSolid ,
+                                   :ODPlanarSurfaceFromTube ,
+                                   :ODSimpleCylinder ;
+                       rdfs:range rdfs:Literal ;
+                       rdfs:label "stock in axial direction"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#stockInRadialDirection
+:stockInRadialDirection rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :ODCylindricalSurfaceWithShoulder ,
+                                    :ODGeneralProfile ,
+                                    :ODIncreasingProfile ,
+                                    :ODSimpleCylinder ,
+                                    :ODSimpleCylindricalSurface ;
+                        rdfs:range rdfs:Literal ;
+                        rdfs:label "stock in radial direction"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#stockOnSurface
+:stockOnSurface rdf:type owl:DatatypeProperty ;
+                rdfs:domain :ConvexContourSurface ,
+                            :GeneralContourSurface ,
+                            :PlanarSurface ;
+                rdfs:range rdfs:Literal ;
+                rdfs:label "stock on surface"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#streetAddress
+:streetAddress rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Address ;
+               rdfs:range rdfs:Literal ;
+               rdfs:label "street address"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#telephone
+:telephone rdf:type owl:DatatypeProperty ;
+           rdfs:domain :BusinessEntity ;
+           rdfs:range xsd:string .
+
+
+###  http://www.manunetwork.com/manuservice/v1#threadOrientation
+:threadOrientation rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :ThreadedBlindHole ,
+                               :ThreadedThroughHole ;
+                   rdfs:range rdfs:Literal ;
+                   rdfs:label "thread orientation"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#threadPercent
+:threadPercent rdf:type owl:DatatypeProperty ;
+               rdfs:domain :ThreadedBlindHole ,
+                           :ThreadedThroughHole ;
+               rdfs:range rdfs:Literal ;
+               rdfs:label "thread percent"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#threadSize
+:threadSize rdf:type owl:DatatypeProperty ;
+            rdfs:domain :ThreadedBlindHole ,
+                        :ThreadedThroughHole ;
+            rdfs:range rdfs:Literal ;
+            rdfs:label "thread size"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#timeOfDelivery
+:timeOfDelivery rdf:type owl:DatatypeProperty ;
+                rdfs:domain :DeliveryMethod ;
+                rdfs:range xsd:dateTime ;
+                rdfs:label "time of delivery"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#travelXAxis
+:travelXAxis rdf:type owl:DatatypeProperty ;
+             rdfs:label "travel X axis"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#travelZAxis
+:travelZAxis rdf:type owl:DatatypeProperty ;
+             rdfs:label "travel Z axis"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#typeOfThread
+:typeOfThread rdf:type owl:DatatypeProperty ;
+              rdfs:domain :ThreadedBlindHole ,
+                          :ThreadedThroughHole ;
+              rdfs:range rdfs:Literal ;
+              rdfs:label "type of thread"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#url
+:url rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Drawing ;
+     rdfs:range xsd:string ;
+     rdfs:label "url"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#usableLength
+:usableLength rdf:type owl:DatatypeProperty ;
+              rdfs:domain :ThreadedBlindHole ,
+                          :ThreadedThroughHole ;
+              rdfs:range rdfs:Literal ;
+              rdfs:label "usable length"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#userTriggedIt
+:userTriggedIt rdf:type owl:DatatypeProperty ;
+               rdfs:domain :ServiceLog ;
+               rdfs:range rdfs:Literal ;
+               rdfs:label "user trigged it" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#validFrom
+:validFrom rdf:type owl:DatatypeProperty ;
+           rdfs:domain :CostSpecification ;
+           rdfs:range xsd:dateTime ;
+           rdfs:label "valid from"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#validThrough
+:validThrough rdf:type owl:DatatypeProperty ;
+              rdfs:domain :CostSpecification ;
+              rdfs:range xsd:dateTime ;
+              rdfs:label "valid through"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#valueAddedTaxIncluded
+:valueAddedTaxIncluded rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :CostSpecification ;
+                       rdfs:range xsd:boolean ;
+                       rdfs:label "value added tax included"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#version
+:version rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Project ;
+         rdfs:range xsd:string ;
+         rdfs:label "version"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#volumeOfMaterial
+:volumeOfMaterial rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :IDTaperProfile ,
+                              :ODFaceGroove ,
+                              :ODGroove ;
+                  rdfs:range rdfs:Literal ;
+                  rdfs:label "volume of material"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#volumeOfPocket
+:volumeOfPocket rdf:type owl:DatatypeProperty ;
+                rdfs:domain :CylindricalPocket ,
+                            :GeneralClosedPocket ,
+                            :GeneralOpenPocket ;
+                rdfs:range rdfs:Literal ;
+                rdfs:label "volume of pocket"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#widthOfChamfer
+:widthOfChamfer rdf:type owl:DatatypeProperty ;
+                rdfs:domain :PlanarContourChamfer ,
+                            :StraightChamfer ,
+                            <http://www.manunetwork.com/manuservice/v1#45Chamfer> ;
+                rdfs:range rdfs:Literal ;
+                rdfs:label "width of chamfer"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#widthOfOpenArea
+:widthOfOpenArea rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :GeneralOpenPocket ;
+                 rdfs:range rdfs:Literal ;
+                 rdfs:label "width of open area"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#widthOfPlanarSurface
+:widthOfPlanarSurface rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :PlanarSurface ;
+                      rdfs:range rdfs:Literal ;
+                      rdfs:label "width of planar surface"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#widthOfSlot
+:widthOfSlot rdf:type owl:DatatypeProperty ;
+             rdfs:domain :CurveSlot ,
+                         :SlotWithConcaveRunOn ,
+                         :StraightSlot ,
+                         :TSlot ;
+             rdfs:range rdfs:Literal ;
+             rdfs:label "width of slot"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#widthOfTSlot
+:widthOfTSlot rdf:type owl:DatatypeProperty ;
+              rdfs:domain :TSlot ;
+              rdfs:range rdfs:Literal ;
+              rdfs:label "width of T slot"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#widthOfTSlotNeck
+:widthOfTSlotNeck rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :TSlot ;
+                  rdfs:range rdfs:Literal ;
+                  rdfs:label "width of T slot neck"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#workpieceDiameter
+:workpieceDiameter rdf:type owl:DatatypeProperty ;
+                   rdfs:label "workpiece diameter" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#workpieceLength
+:workpieceLength rdf:type owl:DatatypeProperty ;
+                 rdfs:label "workpiece length" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#yearsInOperation
+:yearsInOperation rdf:type owl:DatatypeProperty ;
+                  rdfs:range xsd:int ;
+                  rdfs:label "years in operation"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.manunetwork.com/manuservice/v1#Address
+:Address rdf:type owl:Class .
+
+
+###  http://www.manunetwork.com/manuservice/v1#BusinessEntity
+:BusinessEntity rdf:type owl:Class ;
+                rdfs:label "Business entity"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Capability
+:Capability rdf:type owl:Class .
+
+
+###  http://www.manunetwork.com/manuservice/v1#ComputationalResource
+:ComputationalResource rdf:type owl:Class ;
+                       rdfs:subClassOf :HardResource ;
+                       rdfs:label "Computional resource"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#ConicalBottom
+:ConicalBottom rdf:type owl:Class ;
+               rdfs:subClassOf :HoleBottomStyle ;
+               rdfs:label "Conical bottom"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#ContouredShoulder
+:ContouredShoulder rdf:type owl:Class ;
+                   rdfs:subClassOf :MillingFeature ;
+                   rdfs:label "Contoured shoulder" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#ConvexContourSurface
+:ConvexContourSurface rdf:type owl:Class ;
+                      rdfs:subClassOf :MillingFeature ;
+                      rdfs:label "Convex contour surface"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#CornerBreak
+:CornerBreak rdf:type owl:Class ;
+             rdfs:subClassOf :CornerStyle ;
+             rdfs:label "Corner break"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#CornerRadius
+:CornerRadius rdf:type owl:Class ;
+              rdfs:subClassOf :CornerStyle ;
+              rdfs:label "Corner radius"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#CornerStyle
+:CornerStyle rdf:type owl:Class ;
+             rdfs:label "Corner style"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#CostSpecification
+:CostSpecification rdf:type owl:Class ;
+                   rdfs:label "Price specification"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#CounterboreBlindHole
+:CounterboreBlindHole rdf:type owl:Class ;
+                      rdfs:subClassOf :DrillingFeature ;
+                      rdfs:label "Counterbore blind hole"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#CounterboreThroughHole
+:CounterboreThroughHole rdf:type owl:Class ;
+                        rdfs:subClassOf :DrillingFeature ;
+                        rdfs:label "Counterbore through hole"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#CountersunkBlindHole
+:CountersunkBlindHole rdf:type owl:Class ;
+                      rdfs:subClassOf :DrillingFeature ;
+                      rdfs:label "Countersunk blind hole"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#CountersunkThroughHole
+:CountersunkThroughHole rdf:type owl:Class ;
+                        rdfs:subClassOf :DrillingFeature ;
+                        rdfs:label "Countersunk through hole"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#CurveSlot
+:CurveSlot rdf:type owl:Class ;
+           rdfs:subClassOf :MillingFeature ;
+           rdfs:label "Curve slot"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#CuttingTool
+:CuttingTool rdf:type owl:Class ;
+             rdfs:subClassOf :MachiningResource ;
+             rdfs:label "Cutting tool"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#CylindricalPocket
+:CylindricalPocket rdf:type owl:Class ;
+                   rdfs:subClassOf :MillingFeature ;
+                   rdfs:label "Cylindrical pocket" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#DeliveryChargeSpecification
+:DeliveryChargeSpecification rdf:type owl:Class ;
+                             rdfs:subClassOf :CostSpecification ;
+                             rdfs:label "Delivery charge specification"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#DeliveryMethod
+:DeliveryMethod rdf:type owl:Class ;
+                rdfs:label "Delivery method"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#DeliveryModeParcelService
+:DeliveryModeParcelService rdf:type owl:Class ;
+                           rdfs:subClassOf :DeliveryMethod ;
+                           rdfs:label "Delivery mode parcel service"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#DesignCapability
+:DesignCapability rdf:type owl:Class ;
+                  rdfs:subClassOf :Capability ;
+                  rdfs:label "Design capability"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Drawing
+:Drawing rdf:type owl:Class ;
+         rdfs:label "Drawing"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#DrillingFeature
+:DrillingFeature rdf:type owl:Class ;
+                 rdfs:subClassOf :MachiningFeature ;
+                 rdfs:label "Drilling feature"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#ExperimentCapability
+:ExperimentCapability rdf:type owl:Class ;
+                      rdfs:subClassOf :Capability ;
+                      rdfs:label "Experiment capability"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#FiveAxis
+:FiveAxis rdf:type owl:Class ;
+          rdfs:subClassOf :MachineType ;
+          rdfs:label "Five axis"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#FlatBottom
+:FlatBottom rdf:type owl:Class ;
+            rdfs:subClassOf :HoleBottomStyle ;
+            rdfs:label "Flat bottom"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#FourAxis
+:FourAxis rdf:type owl:Class ;
+          rdfs:subClassOf :MachineType ;
+          rdfs:label "Four axis"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#GeneralClosedPocket
+:GeneralClosedPocket rdf:type owl:Class ;
+                     rdfs:subClassOf :MillingFeature ;
+                     rdfs:label "General closed pocket"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#GeneralContourSurface
+:GeneralContourSurface rdf:type owl:Class ;
+                       rdfs:subClassOf :MillingFeature ;
+                       rdfs:label "General contour surface"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#GeneralOpenPocket
+:GeneralOpenPocket rdf:type owl:Class ;
+                   rdfs:subClassOf :MillingFeature ;
+                   rdfs:label "General open pocket"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#GeoCoordinates
+:GeoCoordinates rdf:type owl:Class ;
+                rdfs:label "Geo coordinates"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#HardResource
+:HardResource rdf:type owl:Class ;
+              rdfs:subClassOf :Resource ;
+              rdfs:label "Hard resource"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#HoleBottomStyle
+:HoleBottomStyle rdf:type owl:Class ;
+                 rdfs:label "Hole bottom style"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#HorizontalMachine
+:HorizontalMachine rdf:type owl:Class ;
+                   rdfs:subClassOf :MachineType ;
+                   rdfs:label "Horizontal machine"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#IDBlindHoleWithFlatBottom
+:IDBlindHoleWithFlatBottom rdf:type owl:Class ;
+                           rdfs:subClassOf :TurningFeature ;
+                           rdfs:label "ID blind hole with flat bottom"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#IDBlindHoleWithFlatBottomFromPredrilledHole
+:IDBlindHoleWithFlatBottomFromPredrilledHole rdf:type owl:Class ;
+                                             rdfs:subClassOf :TurningFeature ;
+                                             rdfs:label "ID blind hole with flat bottom from predrilled hole" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#IDBlindHoleWithUndefinedShape
+:IDBlindHoleWithUndefinedShape rdf:type owl:Class ;
+                               rdfs:subClassOf :TurningFeature ;
+                               rdfs:label "ID blind hole with undefined shape"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#IDGroove
+:IDGroove rdf:type owl:Class ;
+          rdfs:subClassOf :TurningFeature ;
+          rdfs:label "ID groove" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#IDSimpleBlindHole
+:IDSimpleBlindHole rdf:type owl:Class ;
+                   rdfs:subClassOf :TurningFeature ;
+                   rdfs:label "ID simple blind hole"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#IDSimpleThroughHole
+:IDSimpleThroughHole rdf:type owl:Class ;
+                     rdfs:subClassOf :TurningFeature ;
+                     rdfs:label "ID simple through hole"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#IDTaperProfile
+:IDTaperProfile rdf:type owl:Class ;
+                rdfs:subClassOf :TurningFeature ;
+                rdfs:label "ID taper profile"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Industry
+:Industry rdf:type owl:Class .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Knowledge
+:Knowledge rdf:type owl:Class ;
+           rdfs:subClassOf :SoftResource .
+
+
+###  http://www.manunetwork.com/manuservice/v1#MachineType
+:MachineType rdf:type owl:Class ;
+             rdfs:label "Machine type"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#MachiningCentre
+:MachiningCentre rdf:type owl:Class ;
+                 rdfs:subClassOf :MachineType ;
+                 rdfs:label "Machining centre"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#MachiningFeature
+:MachiningFeature rdf:type owl:Class ;
+                  rdfs:label "Machining feature"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#MachiningFunction
+:MachiningFunction rdf:type owl:Class ;
+                   rdfs:label "Machining function"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#MachiningResource
+:MachiningResource rdf:type owl:Class ;
+                   rdfs:subClassOf :HardResource ;
+                   rdfs:label "Machining resource"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#MachiningStage
+:MachiningStage rdf:type owl:Class ;
+                rdfs:label "Machining stage"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#ManagementCapability
+:ManagementCapability rdf:type owl:Class ;
+                      rdfs:subClassOf :Capability ;
+                      rdfs:label "Management capability"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Material
+:Material rdf:type owl:Class ;
+          rdfs:label "Material"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#MaterialGroup
+:MaterialGroup rdf:type owl:Class ;
+               rdfs:label "Material group"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#MazakQTN100IIMS
+:MazakQTN100IIMS rdf:type owl:Class ;
+                 rdfs:subClassOf :MachiningResource ;
+                 rdfs:label "Mazak QTN 100II MS"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#MillingFeature
+:MillingFeature rdf:type owl:Class ;
+                rdfs:subClassOf :MachiningFeature ;
+                rdfs:label "Milling feature"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#MillingMachine
+:MillingMachine rdf:type owl:Class ;
+                rdfs:subClassOf :MachineType ;
+                rdfs:label "Milling machine"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#MultitaskingMachine
+:MultitaskingMachine rdf:type owl:Class ;
+                     rdfs:subClassOf :MachineType ;
+                     rdfs:label "Multitasking machine"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#ODCutOffSolid
+:ODCutOffSolid rdf:type owl:Class ;
+               rdfs:subClassOf :TurningFeature ;
+               rdfs:label "OD cut off solid"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#ODCutOffTube
+:ODCutOffTube rdf:type owl:Class ;
+              rdfs:subClassOf :TurningFeature ;
+              rdfs:label "OD cut off tube" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#ODCylindricalSurfaceWithShoulder
+:ODCylindricalSurfaceWithShoulder rdf:type owl:Class ;
+                                  rdfs:subClassOf :TurningFeature ;
+                                  rdfs:label "OD cylindrical surface with shoulder"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#ODFaceGroove
+:ODFaceGroove rdf:type owl:Class ;
+              rdfs:subClassOf :TurningFeature ;
+              rdfs:label "OD face groove" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#ODGeneralProfile
+:ODGeneralProfile rdf:type owl:Class ;
+                  rdfs:subClassOf :TurningFeature ;
+                  rdfs:label "OD general profile"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#ODGroove
+:ODGroove rdf:type owl:Class ;
+          rdfs:subClassOf :TurningFeature ;
+          rdfs:label "OD  groove" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#ODIncreasingProfile
+:ODIncreasingProfile rdf:type owl:Class ;
+                     rdfs:subClassOf :TurningFeature ;
+                     rdfs:label "OD increasing profile"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#ODPlanarSurfaceFromSolid
+:ODPlanarSurfaceFromSolid rdf:type owl:Class ;
+                          rdfs:subClassOf :TurningFeature ;
+                          rdfs:label "OD planar surface from solid"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#ODPlanarSurfaceFromTube
+:ODPlanarSurfaceFromTube rdf:type owl:Class ;
+                         rdfs:subClassOf :TurningFeature ;
+                         rdfs:label "OD planar surface from tube"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#ODSimpleCylinder
+:ODSimpleCylinder rdf:type owl:Class ;
+                  rdfs:subClassOf :TurningFeature ;
+                  rdfs:label "OD simple cylinder"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#ODSimpleCylindricalSurface
+:ODSimpleCylindricalSurface rdf:type owl:Class ;
+                            rdfs:subClassOf :TurningFeature ;
+                            rdfs:label "OD simple cylindrical surface"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#PaymentChargeSpecification
+:PaymentChargeSpecification rdf:type owl:Class ;
+                            rdfs:subClassOf :CostSpecification ;
+                            rdfs:label "Payment charge specification"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#PaymentMethod
+:PaymentMethod rdf:type owl:Class ;
+               rdfs:label "Payment method"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Personnel
+:Personnel rdf:type owl:Class ;
+           rdfs:subClassOf :SoftResource .
+
+
+###  http://www.manunetwork.com/manuservice/v1#PlanarContourChamfer
+:PlanarContourChamfer rdf:type owl:Class ;
+                      rdfs:subClassOf :MillingFeature ;
+                      rdfs:label "Planar contour chamfer"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#PlanarSurface
+:PlanarSurface rdf:type owl:Class ;
+               rdfs:subClassOf :MillingFeature ;
+               rdfs:label "Planar surface"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Product
+:Product rdf:type owl:Class ;
+         rdfs:label "Product"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#ProductionCapability
+:ProductionCapability rdf:type owl:Class ;
+                      rdfs:subClassOf :Capability ;
+                      rdfs:label "Production capability"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#ProductionModel
+:ProductionModel rdf:type owl:Class ;
+                 rdfs:label "Production model"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Project
+:Project rdf:type owl:Class ;
+         rdfs:label "Project"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#RawMaterial
+:RawMaterial rdf:type owl:Class ;
+             rdfs:subClassOf :HardResource ;
+             rdfs:label "Raw material"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Resource
+:Resource rdf:type owl:Class .
+
+
+###  http://www.manunetwork.com/manuservice/v1#ServiceLog
+:ServiceLog rdf:type owl:Class ;
+            rdfs:label "Service log"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#SimpleBlindHole
+:SimpleBlindHole rdf:type owl:Class ;
+                 rdfs:subClassOf :DrillingFeature ;
+                 rdfs:label "Simple blind hole"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#SimpleThroughHole
+:SimpleThroughHole rdf:type owl:Class ;
+                   rdfs:subClassOf :DrillingFeature ;
+                   rdfs:label "Simple through hole"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#SlotWithConcaveRunOn
+:SlotWithConcaveRunOn rdf:type owl:Class ;
+                      rdfs:subClassOf :MillingFeature ;
+                      rdfs:label "Slot with concave run on"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#SoftResource
+:SoftResource rdf:type owl:Class ;
+              rdfs:subClassOf :Resource ;
+              rdfs:label "Soft resource"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Software
+:Software rdf:type owl:Class ;
+          rdfs:subClassOf :SoftResource .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Spindle
+:Spindle rdf:type owl:Class .
+
+
+###  http://www.manunetwork.com/manuservice/v1#SquareEnd
+:SquareEnd rdf:type owl:Class ;
+           rdfs:subClassOf :CornerStyle ;
+           rdfs:label "Square end"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#StandardPart
+:StandardPart rdf:type owl:Class ;
+              rdfs:label "Standard part"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#StraightChamfer
+:StraightChamfer rdf:type owl:Class ;
+                 rdfs:subClassOf :MillingFeature ;
+                 rdfs:label "Straight chamfer"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#StraightShoulder
+:StraightShoulder rdf:type owl:Class ;
+                  rdfs:subClassOf :MillingFeature ;
+                  rdfs:label "Straight shoulder" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#StraightSlot
+:StraightSlot rdf:type owl:Class ;
+              rdfs:subClassOf :MillingFeature ;
+              rdfs:label "Straight slot"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#TSlot
+:TSlot rdf:type owl:Class ;
+       rdfs:subClassOf :MillingFeature ;
+       rdfs:label "T slot"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#ThreadedBlindHole
+:ThreadedBlindHole rdf:type owl:Class ;
+                   rdfs:subClassOf :DrillingFeature ;
+                   rdfs:label "Threaded blind hole"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#ThreadedThroughHole
+:ThreadedThroughHole rdf:type owl:Class ;
+                     rdfs:subClassOf :DrillingFeature ;
+                     rdfs:label "Threaded through hole"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#ThreeAxis
+:ThreeAxis rdf:type owl:Class ;
+           rdfs:subClassOf :MachineType ;
+           rdfs:label "Three axis"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#TurningFeature
+:TurningFeature rdf:type owl:Class ;
+                rdfs:subClassOf :MachiningFeature ;
+                rdfs:label "Turning feature"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#TurningMachine
+:TurningMachine rdf:type owl:Class ;
+                rdfs:subClassOf :MachineType ;
+                rdfs:label "Turning machine"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Turret
+:Turret rdf:type owl:Class .
+
+
+###  http://www.manunetwork.com/manuservice/v1#TwoAxis
+:TwoAxis rdf:type owl:Class ;
+         rdfs:subClassOf :MachineType ;
+         rdfs:label "Two axis"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#VerticalMachine
+:VerticalMachine rdf:type owl:Class ;
+                 rdfs:subClassOf :MachineType ;
+                 rdfs:label "Vertical machine"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Workingstep
+:Workingstep rdf:type owl:Class ;
+             rdfs:label "Workingstep"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Workpiece
+:Workpiece rdf:type owl:Class ;
+           rdfs:label "Workpiece"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Workplan
+:Workplan rdf:type owl:Class ;
+          rdfs:label "Workplan"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#45Chamfer
+<http://www.manunetwork.com/manuservice/v1#45Chamfer> rdf:type owl:Class ;
+                                                      rdfs:subClassOf :CornerStyle ;
+                                                      rdfs:label "45 chamfer"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.manunetwork.com/manuservice/v1#A-Carbon
+:A-Carbon rdf:type owl:NamedIndividual ,
+                   :Material .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Aerospace
+:Aerospace rdf:type owl:NamedIndividual ,
+                    :Industry .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Broaching
+:Broaching rdf:type owl:NamedIndividual ,
+                    :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Chamfering
+:Chamfering rdf:type owl:NamedIndividual ,
+                     :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Chemistry
+:Chemistry rdf:type owl:NamedIndividual ,
+                    :Industry .
+
+
+###  http://www.manunetwork.com/manuservice/v1#CirclipGrooving
+:CirclipGrooving rdf:type owl:NamedIndividual ,
+                          :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#DHL
+:DHL rdf:type owl:NamedIndividual ,
+              :DeliveryModeParcelService .
+
+
+###  http://www.manunetwork.com/manuservice/v1#DeliveryModeDirectDownload
+:DeliveryModeDirectDownload rdf:type owl:NamedIndividual ,
+                                     :DeliveryMethod ;
+                            rdfs:label "Delivery mode direct download" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#DeliveryModeFreight
+:DeliveryModeFreight rdf:type owl:NamedIndividual ,
+                              :DeliveryMethod ;
+                     rdfs:label "Delivery model freight" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#DeliveryModeMail
+:DeliveryModeMail rdf:type owl:NamedIndividual ,
+                           :DeliveryMethod ;
+                  rdfs:label "Delivery mode mail" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#DeliveryModeOwnFleet
+:DeliveryModeOwnFleet rdf:type owl:NamedIndividual ,
+                               :DeliveryMethod ;
+                      rdfs:label "Delivery mode own fleet" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#DeliveryModePickUp
+:DeliveryModePickUp rdf:type owl:NamedIndividual ,
+                             :DeliveryMethod ;
+                    rdfs:label "Delivery mode pick up" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Drilling
+:Drilling rdf:type owl:NamedIndividual ,
+                   :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#EndMilling
+:EndMilling rdf:type owl:NamedIndividual ,
+                     :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Energy
+:Energy rdf:type owl:NamedIndividual ,
+                 :Industry .
+
+
+###  http://www.manunetwork.com/manuservice/v1#EngineerToOrder
+:EngineerToOrder rdf:type owl:NamedIndividual ,
+                          :ProductionModel ;
+                 rdfs:label "Engineer to order"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Engineer_to_order
+:Engineer_to_order rdf:type owl:NamedIndividual .
+
+
+###  http://www.manunetwork.com/manuservice/v1#ExternalGrooving
+:ExternalGrooving rdf:type owl:NamedIndividual ,
+                           :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#ExternalThreadTurning
+:ExternalThreadTurning rdf:type owl:NamedIndividual ,
+                                :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#ExternalTurning
+:ExternalTurning rdf:type owl:NamedIndividual ,
+                          :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#FaceGrooving
+:FaceGrooving rdf:type owl:NamedIndividual ,
+                       :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#FaceMilling
+:FaceMilling rdf:type owl:NamedIndividual ,
+                      :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#FaceTurning
+:FaceTurning rdf:type owl:NamedIndividual ,
+                      :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#FederalExpress
+:FederalExpress rdf:type owl:NamedIndividual ,
+                         :DeliveryModeParcelService ;
+                rdfs:label "Federal express" .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Finishing
+:Finishing rdf:type owl:NamedIndividual ,
+                    :MachiningStage .
+
+
+###  http://www.manunetwork.com/manuservice/v1#FoodProcessing
+:FoodProcessing rdf:type owl:NamedIndividual ,
+                         :Industry ;
+                rdfs:label "Food processing"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#FormMilling
+:FormMilling rdf:type owl:NamedIndividual ,
+                      :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#GearMilling
+:GearMilling rdf:type owl:NamedIndividual ,
+                      :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#GeneralDrilling
+:GeneralDrilling rdf:type owl:NamedIndividual ,
+                          :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#GeneralGrooving
+:GeneralGrooving rdf:type owl:NamedIndividual ,
+                          :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Grinding
+:Grinding rdf:type owl:NamedIndividual ,
+                   :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Grooving
+:Grooving rdf:type owl:NamedIndividual ,
+                   :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Honding
+:Honding rdf:type owl:NamedIndividual ,
+                  :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#ISO_H
+:ISO_H rdf:type owl:NamedIndividual ,
+                :MaterialGroup .
+
+
+###  http://www.manunetwork.com/manuservice/v1#ISO_K
+:ISO_K rdf:type owl:NamedIndividual ,
+                :MaterialGroup .
+
+
+###  http://www.manunetwork.com/manuservice/v1#ISO_M
+:ISO_M rdf:type owl:NamedIndividual ,
+                :MaterialGroup .
+
+
+###  http://www.manunetwork.com/manuservice/v1#ISO_N
+:ISO_N rdf:type owl:NamedIndividual ,
+                :MaterialGroup .
+
+
+###  http://www.manunetwork.com/manuservice/v1#ISO_P
+:ISO_P rdf:type owl:NamedIndividual ,
+                :MaterialGroup .
+
+
+###  http://www.manunetwork.com/manuservice/v1#ISO_S
+:ISO_S rdf:type owl:NamedIndividual ,
+                :MaterialGroup .
+
+
+###  http://www.manunetwork.com/manuservice/v1#InternalThreadTurning
+:InternalThreadTurning rdf:type owl:NamedIndividual ,
+                                :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#InternalTurning
+:InternalTurning rdf:type owl:NamedIndividual ,
+                          :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#LongitudinalTurning
+:LongitudinalTurning rdf:type owl:NamedIndividual ,
+                              :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Marine
+:Marine rdf:type owl:NamedIndividual ,
+                 :Industry .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Milling
+:Milling rdf:type owl:NamedIndividual ,
+                  :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Mining
+:Mining rdf:type owl:NamedIndividual ,
+                 :Industry .
+
+
+###  http://www.manunetwork.com/manuservice/v1#OilGas
+:OilGas rdf:type owl:NamedIndividual ,
+                 :Industry ;
+        rdfs:label "Oil gas"@en .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Paper
+:Paper rdf:type owl:NamedIndividual ,
+                :Industry .
+
+
+###  http://www.manunetwork.com/manuservice/v1#PartingOff
+:PartingOff rdf:type owl:NamedIndividual ,
+                     :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#PlainMilling
+:PlainMilling rdf:type owl:NamedIndividual ,
+                       :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Planning
+:Planning rdf:type owl:NamedIndividual ,
+                   :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#PocketMachining
+:PocketMachining rdf:type owl:NamedIndividual ,
+                          :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#ProductDesignFile
+:ProductDesignFile rdf:type owl:NamedIndividual ,
+                            :Drawing ;
+                   :fileFormat "dxf" ;
+                   :fileSize "12.8M"^^rdfs:Literal .
+
+
+###  http://www.manunetwork.com/manuservice/v1#ProfileMilling
+:ProfileMilling rdf:type owl:NamedIndividual ,
+                         :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#ProfileTurning
+:ProfileTurning rdf:type owl:NamedIndividual ,
+                         :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Refinery
+:Refinery rdf:type owl:NamedIndividual ,
+                   :Industry .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Roughing
+:Roughing rdf:type owl:NamedIndividual ,
+                   :MachiningStage .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Sawing
+:Sawing rdf:type owl:NamedIndividual ,
+                 :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Semifinishing
+:Semifinishing rdf:type owl:NamedIndividual ,
+                        :MachiningStage .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Shaping
+:Shaping rdf:type owl:NamedIndividual ,
+                  :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#SiliconCarbide
+:SiliconCarbide rdf:type owl:NamedIndividual ,
+                         :Material .
+
+
+###  http://www.manunetwork.com/manuservice/v1#SlotMilling
+:SlotMilling rdf:type owl:NamedIndividual ,
+                      :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#StepDrilling
+:StepDrilling rdf:type owl:NamedIndividual ,
+                       :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Tapping
+:Tapping rdf:type owl:NamedIndividual ,
+                  :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#ThreadMilling
+:ThreadMilling rdf:type owl:NamedIndividual ,
+                        :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#ThreadTurning
+:ThreadTurning rdf:type owl:NamedIndividual ,
+                        :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Threading
+:Threading rdf:type owl:NamedIndividual ,
+                    :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#TurnMilling
+:TurnMilling rdf:type owl:NamedIndividual ,
+                      :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#Turning
+:Turning rdf:type owl:NamedIndividual ,
+                  :MachiningFunction .
+
+
+###  http://www.manunetwork.com/manuservice/v1#UPS
+:UPS rdf:type owl:NamedIndividual ,
+              :DeliveryModeParcelService .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

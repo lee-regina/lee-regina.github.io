@@ -1,0 +1,4536 @@
+[ {
+  "@id" : "http://www.manunetwork.com/dc/elements/1.0/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.manunetwork.com/dc/elements/1.0/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.manunetwork.com/dc/elements/1.0/rights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.manunetwork.com/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#45Chamfer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "45 chamfer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CornerStyle"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#A-Carbon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Material"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Address",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Aerospace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Industry"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Broaching",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#BusinessEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Business entity"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Capability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Chamfering",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Chemistry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Industry"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#CirclipGrooving",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#ComputationalResource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Computional resource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#HardResource"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#ConicalBottom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Conical bottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#HoleBottomStyle"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#ContouredShoulder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Contoured shoulder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MillingFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#ConvexContourSurface",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Convex contour surface"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MillingFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#CornerBreak",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Corner break"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CornerStyle"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#CornerRadius",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Corner radius"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CornerStyle"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#CornerStyle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Corner style"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#CostSpecification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Price specification"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#CounterboreBlindHole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Counterbore blind hole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#DrillingFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#CounterboreThroughHole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Counterbore through hole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#DrillingFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#CountersunkBlindHole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Countersunk blind hole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#DrillingFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#CountersunkThroughHole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Countersunk through hole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#DrillingFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#CurveSlot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Curve slot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MillingFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#CuttingTool",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Cutting tool"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningResource"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#CylindricalPocket",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cylindrical pocket"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MillingFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#DHL",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#DeliveryModeParcelService"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#DeliveryChargeSpecification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Delivery charge specification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CostSpecification"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#DeliveryMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Delivery method"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#DeliveryModeDirectDownload",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#DeliveryMethod"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Delivery mode direct download"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#DeliveryModeFreight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#DeliveryMethod"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Delivery model freight"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#DeliveryModeMail",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#DeliveryMethod"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Delivery mode mail"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#DeliveryModeOwnFleet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#DeliveryMethod"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Delivery mode own fleet"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#DeliveryModeParcelService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Delivery mode parcel service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#DeliveryMethod"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#DeliveryModePickUp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#DeliveryMethod"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Delivery mode pick up"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#DesignCapability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Design capability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Capability"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Drawing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Drawing"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Drilling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#DrillingFeature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Drilling feature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#EndMilling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Energy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Industry"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#EngineerToOrder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ProductionModel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Engineer to order"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Engineer_to_order",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#ExperimentCapability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Experiment capability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Capability"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#ExternalGrooving",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#ExternalThreadTurning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#ExternalTurning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#FaceGrooving",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#FaceMilling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#FaceTurning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#FederalExpress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#DeliveryModeParcelService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Federal express"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Finishing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningStage"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#FiveAxis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Five axis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachineType"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#FlatBottom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Flat bottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#HoleBottomStyle"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#FoodProcessing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Industry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Food processing"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#FormMilling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#FourAxis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Four axis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachineType"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#GearMilling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#GeneralClosedPocket",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "General closed pocket"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MillingFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#GeneralContourSurface",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "General contour surface"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MillingFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#GeneralDrilling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#GeneralGrooving",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#GeneralOpenPocket",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "General open pocket"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MillingFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#GeoCoordinates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Geo coordinates"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Grinding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Grooving",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#HardResource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Hard resource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Resource"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#HoleBottomStyle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Hole bottom style"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Honding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#HorizontalMachine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Horizontal machine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachineType"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#IDBlindHoleWithFlatBottom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ID blind hole with flat bottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#TurningFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#IDBlindHoleWithFlatBottomFromPredrilledHole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ID blind hole with flat bottom from predrilled hole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#TurningFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#IDBlindHoleWithUndefinedShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ID blind hole with undefined shape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#TurningFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#IDGroove",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ID groove"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#TurningFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#IDSimpleBlindHole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ID simple blind hole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#TurningFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#IDSimpleThroughHole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ID simple through hole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#TurningFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#IDTaperProfile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ID taper profile"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#TurningFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#ISO_H",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MaterialGroup"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#ISO_K",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MaterialGroup"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#ISO_M",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MaterialGroup"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#ISO_N",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MaterialGroup"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#ISO_P",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MaterialGroup"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#ISO_S",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MaterialGroup"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Industry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#InternalThreadTurning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#InternalTurning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Knowledge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#SoftResource"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#LongitudinalTurning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#MachineType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Machine type"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningCentre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Machining centre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachineType"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFeature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Machining feature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Machining function"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningResource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Machining resource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#HardResource"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningStage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Machining stage"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#ManagementCapability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Management capability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Capability"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Marine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Industry"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Material",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Material"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#MaterialGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Material group"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#MazakQTN100IIMS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Mazak QTN 100II MS"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningResource"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Milling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#MillingFeature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Milling feature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#MillingMachine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Milling machine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachineType"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Mining",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Industry"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#MultitaskingMachine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Multitasking machine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachineType"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#ODCutOffSolid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "OD cut off solid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#TurningFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#ODCutOffTube",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "OD cut off tube"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#TurningFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#ODCylindricalSurfaceWithShoulder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "OD cylindrical surface with shoulder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#TurningFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#ODFaceGroove",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "OD face groove"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#TurningFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#ODGeneralProfile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "OD general profile"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#TurningFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#ODGroove",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "OD  groove"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#TurningFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#ODIncreasingProfile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "OD increasing profile"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#TurningFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#ODPlanarSurfaceFromSolid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "OD planar surface from solid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#TurningFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#ODPlanarSurfaceFromTube",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "OD planar surface from tube"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#TurningFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#ODSimpleCylinder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "OD simple cylinder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#TurningFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#ODSimpleCylindricalSurface",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "OD simple cylindrical surface"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#TurningFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#OilGas",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Industry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Oil gas"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Paper",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Industry"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#PartingOff",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#PaymentChargeSpecification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Payment charge specification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CostSpecification"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#PaymentMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Payment method"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Personnel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#SoftResource"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#PlainMilling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#PlanarContourChamfer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Planar contour chamfer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MillingFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#PlanarSurface",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Planar surface"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MillingFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Planning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#PocketMachining",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Product",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Product"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#ProductDesignFile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.manunetwork.com/manuservice/v1#fileFormat" : [ {
+    "@value" : "dxf"
+  } ],
+  "http://www.manunetwork.com/manuservice/v1#fileSize" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "12.8M"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Drawing"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#ProductionCapability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Production capability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Capability"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#ProductionModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Production model"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#ProfileMilling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#ProfileTurning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Project",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Project"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#RawMaterial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Raw material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#HardResource"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Refinery",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Industry"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Resource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Roughing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningStage"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Sawing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Semifinishing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningStage"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#ServiceLog",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Service log"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Shaping",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#SiliconCarbide",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Material"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#SimpleBlindHole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Simple blind hole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#DrillingFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#SimpleThroughHole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Simple through hole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#DrillingFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#SlotMilling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#SlotWithConcaveRunOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Slot with concave run on"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MillingFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#SoftResource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Soft resource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Resource"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Software",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#SoftResource"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Spindle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#SquareEnd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Square end"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CornerStyle"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#StandardPart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Standard part"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#StepDrilling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#StraightChamfer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Straight chamfer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MillingFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#StraightShoulder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Straight shoulder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MillingFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#StraightSlot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Straight slot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MillingFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#TSlot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "T slot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MillingFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Tapping",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#ThreadMilling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#ThreadTurning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#ThreadedBlindHole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Threaded blind hole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#DrillingFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#ThreadedThroughHole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Threaded through hole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#DrillingFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Threading",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#ThreeAxis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Three axis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachineType"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#TurnMilling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Turning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFunction"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#TurningFeature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Turning feature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#TurningMachine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Turning machine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachineType"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Turret",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#TwoAxis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Two axis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachineType"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#UPS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#DeliveryModeParcelService"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#VerticalMachine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Vertical machine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachineType"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Workingstep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Workingstep"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Workpiece",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Workpiece"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#Workplan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Workplan"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#acceptedPaymentMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Project"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "accepted payment method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#PaymentMethod"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#addressCountry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "address country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#addressLocality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "address locality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#addressRegion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "address region"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#angleOfChamfer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#PlanarContourChamfer"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#StraightChamfer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "angle of chamfer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#angleOfCountersunkFace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CountersunkBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CountersunkThroughHole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "angle of countersunk face"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#angleOfFallingFlank",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODGeneralProfile"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "angle of falling flank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#angleOfRisingFlank",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDTaperProfile"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODCylindricalSurfaceWithShoulder"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODGeneralProfile"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODIncreasingProfile"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODSimpleCylinder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "angle of rising flank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#angleOfSymetricVGroove",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODGroove"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "angle of symetric V groove"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#angleOfTip",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ConicalBottom"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDSimpleBlindHole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "angle of tip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#angleOfWallValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ContouredShoulder"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CurveSlot"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CylindricalPocket"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#GeneralClosedPocket"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#GeneralOpenPocket"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#StraightShoulder"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#StraightSlot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "angle of wall value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#appliesToDeliveryMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#DeliveryChargeSpecification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "applies to delivery method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#DeliveryMethod"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#appliesToFeature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Workingstep"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Workplan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "applies to feature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#appliesToPaymentMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#PaymentChargeSpecification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "applies to payment method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#PaymentMethod"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#appliesWorkplan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Workpiece"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "applies workplan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Workplan"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#bottomRadius",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDBlindHoleWithFlatBottom"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDBlindHoleWithFlatBottomFromPredrilledHole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "bottom radius"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#category",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#BusinessEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "category"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#chunkSize",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "chunk size"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#cornerBreak",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CornerBreak"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "corner break"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#creditGrade",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "credit grade"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#dateLastModified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Project"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "date last modified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#dateOriginated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property specifies the end of the availability of the gr:ProductOrService included in the gr:Offering.\nThe difference to the properties gr:validFrom and gr:validThrough is that those specify the period of time during which the offer is valid and can be accepted.\nExample: I offer to lease my boat for the period of August 1 - August 31, 2010, but you must accept by offer no later than July 15.\nA time-zone should be specified. For a time in GMT/UTC, simply add a \"Z\" following the time:\n2008-05-30T09:30:10Z.\nAlternatively, you can specify an offset from the UTC time by adding a positive or negative time following the time:\n2008-05-30T09:30:10-09:00\nor\n2008-05-30T09:30:10+09:00.\nNote: There is another property gr:availableAtOrFrom, which is used to indicate the gr:Location (e.g. store or shop) from which the goods would be available."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Project"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "date originated"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#depthOfFace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ConvexContourSurface"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#GeneralContourSurface"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "depth of face"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#depthOfGroove",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODFaceGroove"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODGroove"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "depth of groove"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#depthOfPocket",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CylindricalPocket"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#GeneralClosedPocket"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#GeneralOpenPocket"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "depth of pocket"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#depthOfShoulder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ContouredShoulder"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#StraightShoulder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "depth of shoulder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#depthOfSlot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CurveSlot"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#SlotWithConcaveRunOn"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#StraightSlot"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#TSlot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "depth of slot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#BusinessEntity"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Product"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Project"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Workingstep"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Workpiece"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#diameterOfCountersunkHole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CountersunkBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CountersunkThroughHole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "diameter of countersunk hole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#diameterOfCylinder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODCylindricalSurfaceWithShoulder"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODSimpleCylinder"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODSimpleCylindricalSurface"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "diameter of cylinder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#diameterOfFlatbottomedHole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CounterboreBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CounterboreThroughHole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "diameter of flatbottomed hole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#diameterOfGrooveFloorCylinder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "diameter of groove floor cylinder"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#diameterOfHole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CounterboreBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CounterboreThroughHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CountersunkBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CountersunkThroughHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDBlindHoleWithFlatBottom"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDBlindHoleWithFlatBottomFromPredrilledHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDBlindHoleWithUndefinedShape"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDSimpleBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDSimpleThroughHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#SimpleBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#SimpleThroughHole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "diameter of hole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#diameterOfInnerCylinder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODPlanarSurfaceFromTube"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "diameter of inner cylinder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#diameterOfInnerHole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODCutOffTube"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "diameter of inner hole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#diameterOfPlanarFace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODPlanarSurfaceFromSolid"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODPlanarSurfaceFromTube"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "diameter of planar face"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#diameterOfPlanarSplitFace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODCutOffSolid"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODCutOffTube"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "diameter of planar split face"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#diameterOfPredrilledHole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CylindricalPocket"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#GeneralClosedPocket"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDBlindHoleWithFlatBottomFromPredrilledHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDSimpleBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDSimpleThroughHole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "diameter of predrilled hole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#distanceBetweenGrooveAndFrontFaceOfWorkpiece",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODGeneralProfile"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODGroove"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "distance between groove and front face of workpiece"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#drawingNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Product"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Workpiece"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "drawing number"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#elevation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#GeoCoordinates"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#eligibleRegions",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#DeliveryChargeSpecification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "eligible regions"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#entityType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "entity type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#eventDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ServiceLog"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "event date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#eventDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ServiceLog"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "event description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#eventType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ServiceLog"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "event type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#expectedDeliveryMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Project"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "expected delivery method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#DeliveryMethod"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#faxNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#BusinessEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "fax number"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#fileFormat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Drawing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "file format"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#fileSize",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Drawing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "file size"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#floorRadiusValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CornerRadius"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#SlotWithConcaveRunOn"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#TSlot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "floor radius value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#fromMaterial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Workpiece"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "from material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Material"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#fromStandardPart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Workpiece"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "from standard part"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#StandardPart"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#grooveWidth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "groove width"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasAccessTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has access to"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasAddress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#BusinessEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Address"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasBillingAddress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#BusinessEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has billing address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Address"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasBottomStyle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CounterboreBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CountersunkBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#SimpleBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ThreadedBlindHole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has bottom style"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#HoleBottomStyle"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasCornerStyle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ContouredShoulder"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CurveSlot"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CylindricalPocket"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#GeneralClosedPocket"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#GeneralOpenPocket"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#StraightShoulder"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#StraightSlot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has corner style"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CornerStyle"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasCost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Project"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has cost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CostSpecification"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasCostExpectation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Project"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has cost expectation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CostSpecification"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasCurrency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CostSpecification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has currency"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasCurrencyValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CostSpecification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has currency value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasDUNS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#BusinessEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has DUNS"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasDrawing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Product"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Workpiece"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has drawing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Drawing"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has function"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasGeoLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has geo location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#GeoCoordinates"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasGlobalLocationNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#BusinessEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Global Location Number"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasHardnessHB",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has hardness HB"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasHardnessHRC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has hardness HRC"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasISICv4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#BusinessEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has ISIC v4"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasMaXCurrencyValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CostSpecification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has max currency value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasMaxHardnessHB",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has max hardness HB"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasMaxHardnessHRC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has max hardness HRC"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasMaxValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has max value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasMinCurrencyValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CostSpecification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has min currency value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasMinHardnessHB",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has min hardness HB"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasMinHardnessHRC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has min hardness HRC"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasMinValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has min value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasNAICS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#BusinessEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has NAICS"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasOwner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MazakQTN100IIMS"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Project"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has owner"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#BusinessEntity"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasPosition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has position"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasPostalAddress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#BusinessEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has postal address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Address"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasProduct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#BusinessEntity"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Project"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Product"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasProductionModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#BusinessEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has production model"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ProductionModel"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasServiceLog",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Project"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Workpiece"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has service log"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ServiceLog"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasServiceProvider",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Workingstep"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has service provider"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#BusinessEntity"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasSpindle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MazakQTN100IIMS"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has spindle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Spindle"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasSubWorkpiece",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Workpiece"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has sub workpiece"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Workpiece"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasSupplier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#StandardPart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has supplier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#BusinessEntity"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasTurret",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MazakQTN100IIMS"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has turret"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Spindle"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasUnitOfMeasurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has unit of measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#hasWorkpiece",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has workpiece"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Workpiece"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#id",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#BusinessEntity"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Resource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "id"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#includesFeature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Workpiece"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "includes feature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFeature"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#includesWorkingstep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Workplan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "includes workingstep"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Workingstep"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#innerDiameterOfCylinder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "inner diameter of cylinder"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#innerDiameterOfProfile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDTaperProfile"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "inner diameter of profile"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#jobNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Project"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "job number"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#latitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#GeoCoordinates"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#legalName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#BusinessEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "legal name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#lengthOfChamfer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#PlanarContourChamfer"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#StraightChamfer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "length of chamfer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#lengthOfContouredSurface",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ConvexContourSurface"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#GeneralContourSurface"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "length of contoured surface"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#lengthOfCylinder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODCylindricalSurfaceWithShoulder"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODSimpleCylinder"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODSimpleCylindricalSurface"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "length of cylinder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#lengthOfCylindricalPartOfGroove",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "length of cylindrical part of groove"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#lengthOfFlatbottomedHole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CounterboreBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CounterboreThroughHole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "length of flatbottomed hole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#lengthOfHole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CounterboreBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CounterboreThroughHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CountersunkBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CountersunkThroughHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDBlindHoleWithFlatBottom"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDBlindHoleWithFlatBottomFromPredrilledHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDBlindHoleWithUndefinedShape"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDSimpleBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDSimpleThroughHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#SimpleBlindHole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "length of hole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#lengthOfPlanarSurface",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#PlanarSurface"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "length of planar surface"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#lengthOfProfile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDTaperProfile"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODIncreasingProfile"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "length of profile"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#lengthOfShoulder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ContouredShoulder"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#StraightShoulder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "length of shoulder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#longitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#GeoCoordinates"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#materialGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "material group"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#materialSubGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "material sub group"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#maxAllowedLengthOfHole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDBlindHoleWithUndefinedShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "max allowed length of hole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#maxAngleOfChamfer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#PlanarContourChamfer"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#StraightChamfer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "max angle of chamfer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#maxAngleOfCountersunkFace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CountersunkBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CountersunkThroughHole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "max angle of countersunk face"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#maxAngleOfEntryAtHoleStart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CounterboreThroughHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CountersunkThroughHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#SimpleBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#SimpleThroughHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ThreadedBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ThreadedThroughHole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "max angle of entry at hole start"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#maxAngleOfExitAtHoleEnd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CounterboreThroughHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CountersunkThroughHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#SimpleThroughHole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "max angle of exit at hole end"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#maxAngleOfTip",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ConicalBottom"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDSimpleBlindHole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "max angle of tip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#maxAngleOfWallValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ContouredShoulder"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CurveSlot"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CylindricalPocket"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#GeneralClosedPocket"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#GeneralOpenPocket"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#StraightShoulder"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#StraightSlot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "max angle of wall value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#maxBarWorkCapacity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "max bar work capacity"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#maxDepth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODGeneralProfile"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "max depth"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#maxDepthOfCut",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDBlindHoleWithFlatBottom"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDBlindHoleWithFlatBottomFromPredrilledHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDBlindHoleWithUndefinedShape"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDSimpleBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDSimpleThroughHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDTaperProfile"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODCylindricalSurfaceWithShoulder"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODGeneralProfile"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODIncreasingProfile"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODPlanarSurfaceFromSolid"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODPlanarSurfaceFromTube"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODSimpleCylinder"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODSimpleCylindricalSurface"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "max depth of cut"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#maxDepthOfSlot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#TSlot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "max depth of slot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#maxDiameterOfAxialGroove",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODFaceGroove"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODGroove"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "max diameter of axial groove"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#maxDiameterOfCountersunkHole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CountersunkBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CountersunkThroughHole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "max diameter of countersunk hole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#maxDiameterOfFlatbottomedHole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CounterboreBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CounterboreThroughHole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "max diameter of flatbottomed hole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#maxDiameterOfHole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CounterboreBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CounterboreThroughHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CountersunkBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CountersunkThroughHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDBlindHoleWithFlatBottom"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDBlindHoleWithFlatBottomFromPredrilledHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDBlindHoleWithUndefinedShape"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDSimpleBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDSimpleThroughHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#SimpleBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#SimpleThroughHole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "max diameter of hole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#maxFloorRadiusValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CornerRadius"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#SlotWithConcaveRunOn"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#TSlot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "max floor radius value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#maxGrooveWidth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "max groove width"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#maxLengthOfCylindricalPartOfGroove",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "max length of cylindrical part of groove"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#maxMachiningDiameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "max machining diameter"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#maxMachiningLength",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "max machining length"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#maxRadiusOfConcaveGroundShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#SlotWithConcaveRunOn"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "max radius of concave ground shape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#maxSpeed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "max speed"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#maxSwing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "max swing"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#maxWidthOfChamfer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#45Chamfer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "max width of chamfer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#maxWidthOfCut",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODFaceGroove"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODGroove"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "max width of cut"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#maxWidthOfRemovedMaterialZone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODCutOffSolid"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODCutOffTube"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "max width of removed material zone"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#maxWidthOfShoulder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ContouredShoulder"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#StraightShoulder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "max width of shoulder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#maxWidthOfSlot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CurveSlot"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#SlotWithConcaveRunOn"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#StraightSlot"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#TSlot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "max width of slot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#maxWidthOfTSlot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#TSlot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "max width of T slot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#maxWidthOfTSlotNeck",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#TSlot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "max width of T slot neck"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#maxWorkpieceWeight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "max workpiece weight"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#minAngleOfChamfer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#PlanarContourChamfer"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#StraightChamfer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "min angle of chamfer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#minAngleOfCountersunkFace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CountersunkBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CountersunkThroughHole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "min angle of countersunk face"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#minAngleOfTip",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ConicalBottom"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDSimpleBlindHole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "min angle of tip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#minAngleOfWallVaule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ContouredShoulder"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CurveSlot"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CylindricalPocket"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#GeneralClosedPocket"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#GeneralOpenPocket"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#StraightShoulder"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#StraightSlot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "min angle of wall value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#minDepthOfSlot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#TSlot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "min depth of slot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#minDiameterOfAxialGroove",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODFaceGroove"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODGroove"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "min diameter of axial groove"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#minDiameterOfCountersunkHole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CountersunkBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CountersunkThroughHole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "min diameter of countersunk hole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#minDiameterOfFlatbottomedHole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CounterboreBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CounterboreThroughHole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "min diameter of flatbottomed hole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#minDiameterOfHole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CounterboreBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CounterboreThroughHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CountersunkBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CountersunkThroughHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDBlindHoleWithFlatBottom"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDBlindHoleWithFlatBottomFromPredrilledHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDBlindHoleWithUndefinedShape"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDSimpleBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDSimpleThroughHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#SimpleBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#SimpleThroughHole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "min diameter of hole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#minFloorRadiusOfFaceGroove",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODFaceGroove"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODGroove"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "min floor radius of face groove"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#minFloorRadiusValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CornerRadius"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#SlotWithConcaveRunOn"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#TSlot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "min floor radius value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#minGrooveWidth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "min groove width"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#minLengthOfCylindricalPartOfGroove",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "min length of cylindrical part of groove"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#minLengthOfCylindricalSurface",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODGeneralProfile"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "min length of cylindrical surface"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#minLengthOfSurfaceQuality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CounterboreBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CounterboreThroughHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CountersunkBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CountersunkThroughHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#SimpleBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#SimpleThroughHole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "min length of surface quality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#minRadiusInConcaveCorner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CurveSlot"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CylindricalPocket"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#GeneralClosedPocket"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#GeneralContourSurface"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#GeneralOpenPocket"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#PlanarContourChamfer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "min radius in concave corner"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#minRadiusOfConcaveGroundShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#SlotWithConcaveRunOn"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "min radius of concave ground shape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#minWidthOfChamfer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#45Chamfer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "min width of chamfer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#minWidthOfSlot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CurveSlot"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#SlotWithConcaveRunOn"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#StraightSlot"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#TSlot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "min width of slot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#minWidthOfTSlot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#TSlot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "min width of T slot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#minWidthOfTSlotNeck",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#TSlot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "min width of T slot neck"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#motorOutput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "motor output"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#BusinessEntity"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ContouredShoulder"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ConvexContourSurface"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CounterboreBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CounterboreThroughHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CountersunkBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CountersunkThroughHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CurveSlot"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CylindricalPocket"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#GeneralClosedPocket"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#GeneralContourSurface"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#GeneralOpenPocket"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDBlindHoleWithFlatBottom"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDBlindHoleWithFlatBottomFromPredrilledHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDBlindHoleWithUndefinedShape"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDSimpleBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDSimpleThroughHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDTaperProfile"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#MachiningFeature"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Material"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODCutOffSolid"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODCutOffTube"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODCylindricalSurfaceWithShoulder"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODFaceGroove"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODGeneralProfile"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODGroove"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODIncreasingProfile"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODPlanarSurfaceFromSolid"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODPlanarSurfaceFromTube"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODSimpleCylinder"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODSimpleCylindricalSurface"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#PlanarContourChamfer"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#PlanarSurface"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Product"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Project"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#SimpleBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#SimpleThroughHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#SlotWithConcaveRunOn"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#StraightChamfer"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#StraightShoulder"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#StraightSlot"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#TSlot"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ThreadedBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ThreadedThroughHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Workingstep"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Workpiece"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Workplan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#nominalDiameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ThreadedBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ThreadedThroughHole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "nominal diameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#numOfTools",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "num of tools"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#overallLengthOfHole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#SimpleThroughHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ThreadedBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ThreadedThroughHole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "overall length of hole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#partCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#StandardPart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "part code"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#partNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Product"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Workpiece"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "part number"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#pitch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ThreadedBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ThreadedThroughHole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "pitch"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#postalCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "postal code"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#postalOfficeBoxNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "postal office box number"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#productAppliedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#qualityOfFace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CounterboreBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CounterboreThroughHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CountersunkBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CountersunkThroughHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDBlindHoleWithFlatBottom"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDBlindHoleWithFlatBottomFromPredrilledHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDBlindHoleWithUndefinedShape"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDSimpleBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDSimpleThroughHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDTaperProfile"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODCylindricalSurfaceWithShoulder"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODGeneralProfile"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODIncreasingProfile"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODPlanarSurfaceFromSolid"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODPlanarSurfaceFromTube"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODSimpleCylinder"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODSimpleCylindricalSurface"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#SimpleBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#SimpleThroughHole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "quality of face"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#qualityOfWallSurface",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ContouredShoulder"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ConvexContourSurface"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CurveSlot"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CylindricalPocket"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#GeneralClosedPocket"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#GeneralContourSurface"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#GeneralOpenPocket"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#PlanarSurface"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#SlotWithConcaveRunOn"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#StraightShoulder"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#StraightSlot"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#TSlot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "quality of wall surface"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#quantity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Product"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Workpiece"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#radiusOfConcaveGroundShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#SlotWithConcaveRunOn"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "radius of concave ground shape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#radiusOfCorner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODCylindricalSurfaceWithShoulder"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODSimpleCylinder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "radius of corner"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#radiusOfSmallestConcaveBlend",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "raidus of smallest concave blend"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#radiusOfSmallestConcaveProfileBlend",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDTaperProfile"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODGeneralProfile"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODIncreasingProfile"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "raidus of smallest concave profile blend"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#selectedDeliveryMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Project"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "selected delivery method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#DeliveryMethod"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#smallestWidthOfGap",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#GeneralClosedPocket"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#GeneralOpenPocket"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "smallest width of gap"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#standardName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Material"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#StandardPart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "standard name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Project"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Workingstep"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#stockInAxialDirection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODPlanarSurfaceFromSolid"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODPlanarSurfaceFromTube"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODSimpleCylinder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "stock in axial direction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#stockInRadialDirection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODCylindricalSurfaceWithShoulder"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODGeneralProfile"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODIncreasingProfile"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODSimpleCylinder"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODSimpleCylindricalSurface"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "stock in radial direction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#stockOnSurface",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ConvexContourSurface"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#GeneralContourSurface"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#PlanarSurface"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "stock on surface"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#streetAddress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "street address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#telephone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#BusinessEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#threadOrientation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ThreadedBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ThreadedThroughHole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "thread orientation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#threadPercent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ThreadedBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ThreadedThroughHole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "thread percent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#threadSize",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ThreadedBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ThreadedThroughHole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "thread size"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#timeOfDelivery",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#DeliveryMethod"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "time of delivery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#travelXAxis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "travel X axis"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#travelZAxis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "travel Z axis"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#typeOfThread",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ThreadedBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ThreadedThroughHole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "type of thread"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#url",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Drawing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "url"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#usableLength",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ThreadedBlindHole"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ThreadedThroughHole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "usable length"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#userTriggedIt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ServiceLog"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "user trigged it"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#validFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CostSpecification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "valid from"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#validThrough",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CostSpecification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "valid through"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#valueAddedTaxIncluded",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CostSpecification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "value added tax included"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#version",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#Project"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "version"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#volumeOfMaterial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#IDTaperProfile"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODFaceGroove"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#ODGroove"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "volume of material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#volumeOfPocket",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CylindricalPocket"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#GeneralClosedPocket"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#GeneralOpenPocket"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "volume of pocket"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#widthOfChamfer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#PlanarContourChamfer"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#StraightChamfer"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#45Chamfer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "width of chamfer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#widthOfOpenArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#GeneralOpenPocket"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "width of open area"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#widthOfPlanarSurface",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#PlanarSurface"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "width of planar surface"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#widthOfSlot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#CurveSlot"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#SlotWithConcaveRunOn"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#StraightSlot"
+  }, {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#TSlot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "width of slot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#widthOfTSlot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#TSlot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "width of T slot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#widthOfTSlotNeck",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.manunetwork.com/manuservice/v1#TSlot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "width of T slot neck"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#workpieceDiameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "workpiece diameter"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#workpieceLength",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "workpiece length"
+  } ]
+}, {
+  "@id" : "http://www.manunetwork.com/manuservice/v1#yearsInOperation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "years in operation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+} ]
